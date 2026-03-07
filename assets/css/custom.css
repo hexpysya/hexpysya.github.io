@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'MyMonoFont';
   src: url('/bubka/fonts/JetBrainsMono-Bold.ttf') format('truetype');
@@ -249,6 +250,7 @@ article.flex.flex-col:hover h2 {
 .tag-item {
   display: inline-block;
   transition: text-decoration 0.15s ease;
+  
 }
 
 .tag-item:hover {

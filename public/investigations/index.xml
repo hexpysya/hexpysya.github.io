@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/investigations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/investigations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTB-Telly</title>
+      <link>http://localhost:1313/bubka/investigations/htb-telly/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bubka/investigations/htb-telly/</guid>
+      <description>An attacker exploited CVE-2026-24061, an authentication bypass in GNU inetutils telnetd, to obtain an unauthenticated root shell, established persistence via linper.sh across multiple cron and systemd locations, and exfiltrated a credit card database before deleting it from the victim server.</description>
+      
+    </item>
     
     <item>
       <title>CDEF-$tealer</title>

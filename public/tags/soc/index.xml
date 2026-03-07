@@ -10,11 +10,21 @@
     <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/soc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Suricata &#43; Wazuh: Malware Traffic Analysis (PCAP Replay)</title>
-      <link>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata/</link>
+      <title>HTB-Telly</title>
+      <link>http://localhost:1313/bubka/investigations/htb-telly/</link>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata/</guid>
+      <guid>http://localhost:1313/bubka/investigations/htb-telly/</guid>
+      <description>An attacker exploited CVE-2026-24061, an authentication bypass in GNU inetutils telnetd, to obtain an unauthenticated root shell, established persistence via linper.sh across multiple cron and systemd locations, and exfiltrated a credit card database before deleting it from the victim server.</description>
+      
+    </item>
+    
+    <item>
+      <title>Suricata &#43; Wazuh: Malware Traffic</title>
+      <link>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata-malware-traffic/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata-malware-traffic/</guid>
       <description>Replayed a malicious PCAP file containing Hancitor dropper traffic that deployed Cobalt Strike, Dridex, and Ficker Stealer. Analyzed 423 Suricata alerts in Wazuh, reconstructed the full infection chain, and mapped findings to MITRE ATT&amp;amp;CK.</description>
       
     </item>
