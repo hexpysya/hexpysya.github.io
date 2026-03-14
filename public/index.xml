@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>THM-Phishing</title>
+      <link>http://localhost:1313/bubka/blue_team/thm-phishing/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bubka/blue_team/thm-phishing/</guid>
+      <description>Three phishing campaigns were identified across four alerts: a legitimate HR onboarding email (false positive), a fake Amazon delivery notification whose bit.ly link was blocked by the firewall, and a Microsoft account spoofing email from m1crosoftsupport.co whose link was allowed through the firewall — indicating a likely credential harvesting visit by the recipient.</description>
+      
+    </item>
+    
+    <item>
       <title>Wazuh &#43; Suricata: SQL injection detection</title>
       <link>http://localhost:1313/bubka/blue_team/wazuh-injection/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
