@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/</loc>
-    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/bubka/investigations/</loc>
+    <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/bubka/</loc>
+    <lastmod>2026-03-18T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/bubka/investigations/cdef-obfuscated/</loc>
+    <lastmod>2026-03-18T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/bubka/blue_team/</loc>
     <lastmod>2026-03-16T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -17,10 +25,6 @@
   <url>
     <loc>http://localhost:1313/bubka/blue_team/thm-phishing-unfolding/</loc>
     <lastmod>2026-03-16T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/bubka/investigations/</loc>
-    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/bubka/investigations/htb-lockpick3.0/</loc>
