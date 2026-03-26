@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = 'bubka hacks stuff'
 theme = "blowfish"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
 
 [markup]
   [markup.goldmark]
@@ -38,6 +44,11 @@ highlightCurrentMenuArea = false
 smartTOC = true
 favicon = "favicon.ico"
 description = "Writeups on malware analysis, reverse engineering and DFIR."
+enableA11y = false
+enableSearch = true
+enableCodeCopy = false
+enableStructuredBreadcrumbs = false
+
 [params.header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
