@@ -9,7 +9,6 @@ tags:
   - Network Analysis
   - Phishing
   - AsyncRAT
-  - L2 Escalation
 platform: LetsDefend
 ---
 

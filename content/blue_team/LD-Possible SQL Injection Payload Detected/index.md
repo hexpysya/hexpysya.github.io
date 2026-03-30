@@ -9,7 +9,6 @@ tags:
   - Network Analysis
   - Web Attack
   - SQL Injection
-  - No L2 Escalation
 platform: LetsDefend
 ---
 

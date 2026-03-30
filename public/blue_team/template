@@ -1,0 +1,48 @@
+---
+title: "LD-Possible SQL Injection Payload Detected"
+date: 2026-03-22
+draft: false
+summary: " "
+tags:
+  - SOC
+
+platform: LetsDefend
+---
+
+### <span class="hl">Alert</span>
+```
+
+```
+
+### <span style="color:red">Identification</span>
+
+#### <span class="hl">Is the traffic coming from outside?</span>
+
+
+#### <span class="hl">Is the source malicious?</span>
+
+
+#### <span class="hl">What type of attack was attempted?</span>
+
+
+#### <span class="hl">Did anyone else get targeted?</span>
+
+
+#### <span class="hl">Did the attack succeed?</span>
+
+
+### <span style="color:red">Triage Decision</span>
+
+#### <span class="hl">What is the impact level?</span>
+
+### <span style="color:red">Containment</span>
+
+#### <span class="hl">Is the attacker still active?</span>
+
+#### <span class="hl">Is the vulnerable endpoint still exposed?</span>
+
+#### <span class="hl">Is the web server still compromised?</span>
+
+### <span class="hl">IOCs</span>
+
+

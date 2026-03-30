@@ -211,10 +211,10 @@
       "name": "Bubka"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-03-17T00:00:00\u002b00:00",
-    "datePublished": "2026-03-17T00:00:00\u002b00:00",
+    "dateCreated": "2026-03-22T00:00:00\u002b00:00",
+    "datePublished": "2026-03-22T00:00:00\u002b00:00",
     
-    "dateModified": "2026-03-17T00:00:00\u002b00:00",
+    "dateModified": "2026-03-22T00:00:00\u002b00:00",
     
     
     
@@ -602,11 +602,11 @@
     <header class="items-center text-start text-xl font-semibold">
       <a
         
-          href="/blue_team/ld-phishing-alert/"
+          href="/blue_team/ld-cve202553770-sharepoint-toolshell-auth-bypass-and-rce/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
-          LD-Deceptive Mail Detected
+          LD-CVE-2025-53770 SharePoint ToolShell Auth Bypass and RCE
           
         </h2>
       </a>
@@ -656,7 +656,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-03-17T00:00:00&#43;00:00">March 17, 2026</time>
+      <time datetime="2026-03-22T00:00:00&#43;00:00">March 22, 2026</time>
     
 
     
@@ -704,31 +704,21 @@
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/phishing/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/web-attack/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Phishing
+    Web Attack
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/asyncrat/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/cve-2025-53770/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AsyncRAT
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/silentbuilder/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SILENTBUILDER
+    CVE-2025-53770
   </span>
 </span>
 
@@ -758,7 +748,7 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        A phishing email with a password-protected ZIP delivered AsyncRAT via a SILENTBUILDER dropper. The victim executed the payload, establishing an active C2 channel and triggering full host reconnaissance before containment.
+        An attacker exploited CVE-2025-53770 against a SharePoint server, achieving unauthenticated RCE via .NET deserialization. The attacker extracted the MachineKey, compiled and dropped a payload, planted a webshell in the SharePoint layouts directory, and established a reverse connection to the attacker-controlled server.
       </div>
     
   </div>
