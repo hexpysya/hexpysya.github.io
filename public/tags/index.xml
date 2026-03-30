@@ -150,36 +150,6 @@
     </item>
     
     <item>
-      <title>Escalated to L2</title>
-      <link>http://localhost:1313/tags/escalated-to-l2/</link>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/escalated-to-l2/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>LetsDefend</title>
-      <link>http://localhost:1313/tags/letsdefend/</link>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/letsdefend/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>No L2 Escalation</title>
-      <link>http://localhost:1313/tags/no-l2-escalation/</link>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/no-l2-escalation/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>SOC</title>
       <link>http://localhost:1313/tags/soc/</link>
       <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
@@ -270,16 +240,6 @@
     </item>
     
     <item>
-      <title>L2 Escalation</title>
-      <link>http://localhost:1313/tags/l2-escalation/</link>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/l2-escalation/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>CVE-2017-11882</title>
       <link>http://localhost:1313/tags/cve-2017-11882/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
@@ -295,6 +255,16 @@
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/dns-tunneling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LetsDefend</title>
+      <link>http://localhost:1313/tags/letsdefend/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/letsdefend/</guid>
       <description></description>
       
     </item>

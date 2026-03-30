@@ -49,6 +49,8 @@ enableSearch = true
 enableCodeCopy = false
 enableStructuredBreadcrumbs = false
 
+mainSections = ["investigations", "blue_team"]
+
 [params.header]
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
