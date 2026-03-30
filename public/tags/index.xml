@@ -2,1359 +2,1389 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DFIR</title>
-      <link>http://localhost:1313/bubka/tags/dfir/</link>
+      <link>http://localhost:1313/tags/dfir/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dfir/</guid>
+      <guid>http://localhost:1313/tags/dfir/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Event Viewer</title>
-      <link>http://localhost:1313/bubka/tags/event-viewer/</link>
+      <link>http://localhost:1313/tags/event-viewer/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/event-viewer/</guid>
+      <guid>http://localhost:1313/tags/event-viewer/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Keylogger</title>
-      <link>http://localhost:1313/bubka/tags/keylogger/</link>
+      <link>http://localhost:1313/tags/keylogger/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/keylogger/</guid>
+      <guid>http://localhost:1313/tags/keylogger/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>LNK</title>
-      <link>http://localhost:1313/bubka/tags/lnk/</link>
+      <link>http://localhost:1313/tags/lnk/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/lnk/</guid>
+      <guid>http://localhost:1313/tags/lnk/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Log Analysis</title>
-      <link>http://localhost:1313/bubka/tags/log-analysis/</link>
+      <link>http://localhost:1313/tags/log-analysis/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/log-analysis/</guid>
+      <guid>http://localhost:1313/tags/log-analysis/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MFTExplorer</title>
-      <link>http://localhost:1313/bubka/tags/mftexplorer/</link>
+      <link>http://localhost:1313/tags/mftexplorer/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/mftexplorer/</guid>
+      <guid>http://localhost:1313/tags/mftexplorer/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Network Analysis</title>
-      <link>http://localhost:1313/bubka/tags/network-analysis/</link>
+      <link>http://localhost:1313/tags/network-analysis/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/network-analysis/</guid>
+      <guid>http://localhost:1313/tags/network-analysis/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PCAP</title>
-      <link>http://localhost:1313/bubka/tags/pcap/</link>
+      <link>http://localhost:1313/tags/pcap/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/pcap/</guid>
+      <guid>http://localhost:1313/tags/pcap/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Phishing</title>
-      <link>http://localhost:1313/bubka/tags/phishing/</link>
+      <link>http://localhost:1313/tags/phishing/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/phishing/</guid>
+      <guid>http://localhost:1313/tags/phishing/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PowerShell</title>
-      <link>http://localhost:1313/bubka/tags/powershell/</link>
+      <link>http://localhost:1313/tags/powershell/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/powershell/</guid>
+      <guid>http://localhost:1313/tags/powershell/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SMTP</title>
-      <link>http://localhost:1313/bubka/tags/smtp/</link>
+      <link>http://localhost:1313/tags/smtp/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/smtp/</guid>
+      <guid>http://localhost:1313/tags/smtp/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/bubka/tags/windows/</link>
+      <link>http://localhost:1313/tags/windows/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/windows/</guid>
+      <guid>http://localhost:1313/tags/windows/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Wireshark</title>
-      <link>http://localhost:1313/bubka/tags/wireshark/</link>
+      <link>http://localhost:1313/tags/wireshark/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/wireshark/</guid>
+      <guid>http://localhost:1313/tags/wireshark/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Doc</title>
-      <link>http://localhost:1313/bubka/tags/doc/</link>
+      <link>http://localhost:1313/tags/doc/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/doc/</guid>
+      <guid>http://localhost:1313/tags/doc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>http://localhost:1313/bubka/tags/javascript/</link>
+      <link>http://localhost:1313/tags/javascript/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/javascript/</guid>
+      <guid>http://localhost:1313/tags/javascript/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Malware Analysis</title>
-      <link>http://localhost:1313/bubka/tags/malware-analysis/</link>
+      <link>http://localhost:1313/tags/malware-analysis/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/malware-analysis/</guid>
+      <guid>http://localhost:1313/tags/malware-analysis/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Reverse Engineering</title>
-      <link>http://localhost:1313/bubka/tags/reverse-engineering/</link>
+      <link>http://localhost:1313/tags/reverse-engineering/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/reverse-engineering/</guid>
+      <guid>http://localhost:1313/tags/reverse-engineering/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>VBA</title>
-      <link>http://localhost:1313/bubka/tags/vba/</link>
+      <link>http://localhost:1313/tags/vba/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/vba/</guid>
+      <guid>http://localhost:1313/tags/vba/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AsyncRAT</title>
+      <link>http://localhost:1313/tags/asyncrat/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/asyncrat/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2017-11882</title>
-      <link>http://localhost:1313/bubka/tags/cve-2017-11882/</link>
+      <link>http://localhost:1313/tags/cve-2017-11882/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2017-11882/</guid>
+      <guid>http://localhost:1313/tags/cve-2017-11882/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>DNS Tunneling</title>
-      <link>http://localhost:1313/bubka/tags/dns-tunneling/</link>
+      <link>http://localhost:1313/tags/dns-tunneling/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dns-tunneling/</guid>
+      <guid>http://localhost:1313/tags/dns-tunneling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Escalated to L2</title>
+      <link>http://localhost:1313/tags/escalated-to-l2/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/escalated-to-l2/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>LetsDefend</title>
-      <link>http://localhost:1313/bubka/tags/letsdefend/</link>
+      <link>http://localhost:1313/tags/letsdefend/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/letsdefend/</guid>
+      <guid>http://localhost:1313/tags/letsdefend/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SILENTBUILDER</title>
+      <link>http://localhost:1313/tags/silentbuilder/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/silentbuilder/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SOC</title>
-      <link>http://localhost:1313/bubka/tags/soc/</link>
+      <link>http://localhost:1313/tags/soc/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/soc/</guid>
+      <guid>http://localhost:1313/tags/soc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Splunk</title>
-      <link>http://localhost:1313/bubka/tags/splunk/</link>
+      <link>http://localhost:1313/tags/splunk/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/splunk/</guid>
+      <guid>http://localhost:1313/tags/splunk/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Xlsx</title>
-      <link>http://localhost:1313/bubka/tags/xlsx/</link>
+      <link>http://localhost:1313/tags/xlsx/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/xlsx/</guid>
+      <guid>http://localhost:1313/tags/xlsx/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AES</title>
-      <link>http://localhost:1313/bubka/tags/aes/</link>
+      <link>http://localhost:1313/tags/aes/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/aes/</guid>
+      <guid>http://localhost:1313/tags/aes/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ELF64</title>
-      <link>http://localhost:1313/bubka/tags/elf64/</link>
+      <link>http://localhost:1313/tags/elf64/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/elf64/</guid>
+      <guid>http://localhost:1313/tags/elf64/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ida</title>
-      <link>http://localhost:1313/bubka/tags/ida/</link>
+      <link>http://localhost:1313/tags/ida/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/ida/</guid>
+      <guid>http://localhost:1313/tags/ida/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/bubka/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ransomware</title>
-      <link>http://localhost:1313/bubka/tags/ransomware/</link>
+      <link>http://localhost:1313/tags/ransomware/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/ransomware/</guid>
+      <guid>http://localhost:1313/tags/ransomware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Volatility Framework</title>
-      <link>http://localhost:1313/bubka/tags/volatility-framework/</link>
+      <link>http://localhost:1313/tags/volatility-framework/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/volatility-framework/</guid>
+      <guid>http://localhost:1313/tags/volatility-framework/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Firewall</title>
-      <link>http://localhost:1313/bubka/tags/firewall/</link>
+      <link>http://localhost:1313/tags/firewall/</link>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/firewall/</guid>
+      <guid>http://localhost:1313/tags/firewall/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MSSQL</title>
-      <link>http://localhost:1313/bubka/tags/mssql/</link>
+      <link>http://localhost:1313/tags/mssql/</link>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/mssql/</guid>
+      <guid>http://localhost:1313/tags/mssql/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SQL Injection</title>
-      <link>http://localhost:1313/bubka/tags/sql-injection/</link>
+      <link>http://localhost:1313/tags/sql-injection/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/sql-injection/</guid>
+      <guid>http://localhost:1313/tags/sql-injection/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Wazuh</title>
-      <link>http://localhost:1313/bubka/tags/wazuh/</link>
+      <link>http://localhost:1313/tags/wazuh/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/wazuh/</guid>
+      <guid>http://localhost:1313/tags/wazuh/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PDF</title>
-      <link>http://localhost:1313/bubka/tags/pdf/</link>
+      <link>http://localhost:1313/tags/pdf/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/pdf/</guid>
+      <guid>http://localhost:1313/tags/pdf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2026-24061</title>
-      <link>http://localhost:1313/bubka/tags/cve-2026-24061/</link>
+      <link>http://localhost:1313/tags/cve-2026-24061/</link>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2026-24061/</guid>
+      <guid>http://localhost:1313/tags/cve-2026-24061/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Telnet</title>
-      <link>http://localhost:1313/bubka/tags/telnet/</link>
+      <link>http://localhost:1313/tags/telnet/</link>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/telnet/</guid>
+      <guid>http://localhost:1313/tags/telnet/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Anti-Debugging</title>
-      <link>http://localhost:1313/bubka/tags/anti-debugging/</link>
+      <link>http://localhost:1313/tags/anti-debugging/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/anti-debugging/</guid>
+      <guid>http://localhost:1313/tags/anti-debugging/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Anti-VM</title>
-      <link>http://localhost:1313/bubka/tags/anti-vm/</link>
+      <link>http://localhost:1313/tags/anti-vm/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/anti-vm/</guid>
+      <guid>http://localhost:1313/tags/anti-vm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Capa</title>
-      <link>http://localhost:1313/bubka/tags/capa/</link>
+      <link>http://localhost:1313/tags/capa/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/capa/</guid>
+      <guid>http://localhost:1313/tags/capa/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CAPEv2</title>
-      <link>http://localhost:1313/bubka/tags/capev2/</link>
+      <link>http://localhost:1313/tags/capev2/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/capev2/</guid>
+      <guid>http://localhost:1313/tags/capev2/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CRC32</title>
-      <link>http://localhost:1313/bubka/tags/crc32/</link>
+      <link>http://localhost:1313/tags/crc32/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/crc32/</guid>
+      <guid>http://localhost:1313/tags/crc32/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>DLL</title>
-      <link>http://localhost:1313/bubka/tags/dll/</link>
+      <link>http://localhost:1313/tags/dll/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dll/</guid>
+      <guid>http://localhost:1313/tags/dll/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Dridex</title>
-      <link>http://localhost:1313/bubka/tags/dridex/</link>
+      <link>http://localhost:1313/tags/dridex/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dridex/</guid>
+      <guid>http://localhost:1313/tags/dridex/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Dynamic API Resolution</title>
-      <link>http://localhost:1313/bubka/tags/dynamic-api-resolution/</link>
+      <link>http://localhost:1313/tags/dynamic-api-resolution/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dynamic-api-resolution/</guid>
+      <guid>http://localhost:1313/tags/dynamic-api-resolution/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>HashDB</title>
-      <link>http://localhost:1313/bubka/tags/hashdb/</link>
+      <link>http://localhost:1313/tags/hashdb/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/hashdb/</guid>
+      <guid>http://localhost:1313/tags/hashdb/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Heaven&#39;s Gate</title>
-      <link>http://localhost:1313/bubka/tags/heavens-gate/</link>
+      <link>http://localhost:1313/tags/heavens-gate/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/heavens-gate/</guid>
+      <guid>http://localhost:1313/tags/heavens-gate/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Indirect Calls</title>
-      <link>http://localhost:1313/bubka/tags/indirect-calls/</link>
+      <link>http://localhost:1313/tags/indirect-calls/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/indirect-calls/</guid>
+      <guid>http://localhost:1313/tags/indirect-calls/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Loader</title>
-      <link>http://localhost:1313/bubka/tags/loader/</link>
+      <link>http://localhost:1313/tags/loader/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/loader/</guid>
+      <guid>http://localhost:1313/tags/loader/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PE</title>
-      <link>http://localhost:1313/bubka/tags/pe/</link>
+      <link>http://localhost:1313/tags/pe/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/pe/</guid>
+      <guid>http://localhost:1313/tags/pe/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>RC4</title>
-      <link>http://localhost:1313/bubka/tags/rc4/</link>
+      <link>http://localhost:1313/tags/rc4/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rc4/</guid>
+      <guid>http://localhost:1313/tags/rc4/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vectored Exception Handling</title>
-      <link>http://localhost:1313/bubka/tags/vectored-exception-handling/</link>
+      <link>http://localhost:1313/tags/vectored-exception-handling/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/vectored-exception-handling/</guid>
+      <guid>http://localhost:1313/tags/vectored-exception-handling/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MITRE ATT&amp;CK</title>
-      <link>http://localhost:1313/bubka/tags/mitre-attck/</link>
+      <link>http://localhost:1313/tags/mitre-attck/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/mitre-attck/</guid>
+      <guid>http://localhost:1313/tags/mitre-attck/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Suricata</title>
-      <link>http://localhost:1313/bubka/tags/suricata/</link>
+      <link>http://localhost:1313/tags/suricata/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/suricata/</guid>
+      <guid>http://localhost:1313/tags/suricata/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>.NET</title>
-      <link>http://localhost:1313/bubka/tags/.net/</link>
+      <link>http://localhost:1313/tags/.net/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/.net/</guid>
+      <guid>http://localhost:1313/tags/.net/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Clipboard Hijacking</title>
-      <link>http://localhost:1313/bubka/tags/clipboard-hijacking/</link>
+      <link>http://localhost:1313/tags/clipboard-hijacking/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/clipboard-hijacking/</guid>
+      <guid>http://localhost:1313/tags/clipboard-hijacking/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Cryptocurrency Stealer</title>
-      <link>http://localhost:1313/bubka/tags/cryptocurrency-stealer/</link>
+      <link>http://localhost:1313/tags/cryptocurrency-stealer/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cryptocurrency-stealer/</guid>
+      <guid>http://localhost:1313/tags/cryptocurrency-stealer/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Dnspy</title>
-      <link>http://localhost:1313/bubka/tags/dnspy/</link>
+      <link>http://localhost:1313/tags/dnspy/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dnspy/</guid>
+      <guid>http://localhost:1313/tags/dnspy/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>RAT</title>
-      <link>http://localhost:1313/bubka/tags/rat/</link>
+      <link>http://localhost:1313/tags/rat/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rat/</guid>
+      <guid>http://localhost:1313/tags/rat/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Sandbox</title>
-      <link>http://localhost:1313/bubka/tags/sandbox/</link>
+      <link>http://localhost:1313/tags/sandbox/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/sandbox/</guid>
+      <guid>http://localhost:1313/tags/sandbox/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>XWorm</title>
-      <link>http://localhost:1313/bubka/tags/xworm/</link>
+      <link>http://localhost:1313/tags/xworm/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/xworm/</guid>
+      <guid>http://localhost:1313/tags/xworm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Debug</title>
-      <link>http://localhost:1313/bubka/tags/debug/</link>
+      <link>http://localhost:1313/tags/debug/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/debug/</guid>
+      <guid>http://localhost:1313/tags/debug/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://localhost:1313/bubka/tags/golang/</link>
+      <link>http://localhost:1313/tags/golang/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/golang/</guid>
+      <guid>http://localhost:1313/tags/golang/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Installer</title>
-      <link>http://localhost:1313/bubka/tags/installer/</link>
+      <link>http://localhost:1313/tags/installer/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/installer/</guid>
+      <guid>http://localhost:1313/tags/installer/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>NSIS</title>
-      <link>http://localhost:1313/bubka/tags/nsis/</link>
+      <link>http://localhost:1313/tags/nsis/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/nsis/</guid>
+      <guid>http://localhost:1313/tags/nsis/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Self-Extracting Archive</title>
-      <link>http://localhost:1313/bubka/tags/self-extracting-archive/</link>
+      <link>http://localhost:1313/tags/self-extracting-archive/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/self-extracting-archive/</guid>
+      <guid>http://localhost:1313/tags/self-extracting-archive/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>HTA</title>
-      <link>http://localhost:1313/bubka/tags/hta/</link>
+      <link>http://localhost:1313/tags/hta/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/hta/</guid>
+      <guid>http://localhost:1313/tags/hta/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Olevba</title>
-      <link>http://localhost:1313/bubka/tags/olevba/</link>
+      <link>http://localhost:1313/tags/olevba/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/olevba/</guid>
+      <guid>http://localhost:1313/tags/olevba/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Process Injection</title>
-      <link>http://localhost:1313/bubka/tags/process-injection/</link>
+      <link>http://localhost:1313/tags/process-injection/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/process-injection/</guid>
+      <guid>http://localhost:1313/tags/process-injection/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Scdbg</title>
-      <link>http://localhost:1313/bubka/tags/scdbg/</link>
+      <link>http://localhost:1313/tags/scdbg/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/scdbg/</guid>
+      <guid>http://localhost:1313/tags/scdbg/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Shellcode Analysis</title>
-      <link>http://localhost:1313/bubka/tags/shellcode-analysis/</link>
+      <link>http://localhost:1313/tags/shellcode-analysis/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/shellcode-analysis/</guid>
+      <guid>http://localhost:1313/tags/shellcode-analysis/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vmonkey</title>
-      <link>http://localhost:1313/bubka/tags/vmonkey/</link>
+      <link>http://localhost:1313/tags/vmonkey/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/vmonkey/</guid>
+      <guid>http://localhost:1313/tags/vmonkey/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ChromeHistoryView</title>
-      <link>http://localhost:1313/bubka/tags/chromehistoryview/</link>
+      <link>http://localhost:1313/tags/chromehistoryview/</link>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/chromehistoryview/</guid>
+      <guid>http://localhost:1313/tags/chromehistoryview/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CryptnetUrlCache</title>
-      <link>http://localhost:1313/bubka/tags/cryptneturlcache/</link>
+      <link>http://localhost:1313/tags/cryptneturlcache/</link>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cryptneturlcache/</guid>
+      <guid>http://localhost:1313/tags/cryptneturlcache/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>DLL Hijacking</title>
-      <link>http://localhost:1313/bubka/tags/dll-hijacking/</link>
+      <link>http://localhost:1313/tags/dll-hijacking/</link>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/dll-hijacking/</guid>
+      <guid>http://localhost:1313/tags/dll-hijacking/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PECmd</title>
-      <link>http://localhost:1313/bubka/tags/pecmd/</link>
+      <link>http://localhost:1313/tags/pecmd/</link>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/pecmd/</guid>
+      <guid>http://localhost:1313/tags/pecmd/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>RegistryExplorer</title>
-      <link>http://localhost:1313/bubka/tags/registryexplorer/</link>
+      <link>http://localhost:1313/tags/registryexplorer/</link>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/registryexplorer/</guid>
+      <guid>http://localhost:1313/tags/registryexplorer/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE</title>
-      <link>http://localhost:1313/bubka/tags/cve/</link>
+      <link>http://localhost:1313/tags/cve/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve/</guid>
+      <guid>http://localhost:1313/tags/cve/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/bubka/tags/web/</link>
+      <link>http://localhost:1313/tags/web/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/web/</guid>
+      <guid>http://localhost:1313/tags/web/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MotW Bypass</title>
-      <link>http://localhost:1313/bubka/tags/motw-bypass/</link>
+      <link>http://localhost:1313/tags/motw-bypass/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/motw-bypass/</guid>
+      <guid>http://localhost:1313/tags/motw-bypass/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>NAT Traversal</title>
-      <link>http://localhost:1313/bubka/tags/nat-traversal/</link>
+      <link>http://localhost:1313/tags/nat-traversal/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/nat-traversal/</guid>
+      <guid>http://localhost:1313/tags/nat-traversal/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PHORPIEX</title>
-      <link>http://localhost:1313/bubka/tags/phorpiex/</link>
+      <link>http://localhost:1313/tags/phorpiex/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/phorpiex/</guid>
+      <guid>http://localhost:1313/tags/phorpiex/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>UPnP Exploitation</title>
-      <link>http://localhost:1313/bubka/tags/upnp-exploitation/</link>
+      <link>http://localhost:1313/tags/upnp-exploitation/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/upnp-exploitation/</guid>
+      <guid>http://localhost:1313/tags/upnp-exploitation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>USB Spreading</title>
-      <link>http://localhost:1313/bubka/tags/usb-spreading/</link>
+      <link>http://localhost:1313/tags/usb-spreading/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/usb-spreading/</guid>
+      <guid>http://localhost:1313/tags/usb-spreading/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2024-6473</title>
-      <link>http://localhost:1313/bubka/tags/cve-2024-6473/</link>
+      <link>http://localhost:1313/tags/cve-2024-6473/</link>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2024-6473/</guid>
+      <guid>http://localhost:1313/tags/cve-2024-6473/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ChaCha20</title>
-      <link>http://localhost:1313/bubka/tags/chacha20/</link>
+      <link>http://localhost:1313/tags/chacha20/</link>
       <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/chacha20/</guid>
+      <guid>http://localhost:1313/tags/chacha20/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>T1053.003</title>
-      <link>http://localhost:1313/bubka/tags/t1053.003/</link>
+      <link>http://localhost:1313/tags/t1053.003/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/t1053.003/</guid>
+      <guid>http://localhost:1313/tags/t1053.003/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>T1098.004</title>
-      <link>http://localhost:1313/bubka/tags/t1098.004/</link>
+      <link>http://localhost:1313/tags/t1098.004/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/t1098.004/</guid>
+      <guid>http://localhost:1313/tags/t1098.004/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>T1110</title>
-      <link>http://localhost:1313/bubka/tags/t1110/</link>
+      <link>http://localhost:1313/tags/t1110/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/t1110/</guid>
+      <guid>http://localhost:1313/tags/t1110/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>T1136.001</title>
-      <link>http://localhost:1313/bubka/tags/t1136.001/</link>
+      <link>http://localhost:1313/tags/t1136.001/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/t1136.001/</guid>
+      <guid>http://localhost:1313/tags/t1136.001/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>T1543.002</title>
-      <link>http://localhost:1313/bubka/tags/t1543.002/</link>
+      <link>http://localhost:1313/tags/t1543.002/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/t1543.002/</guid>
+      <guid>http://localhost:1313/tags/t1543.002/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CamaleonCMS</title>
-      <link>http://localhost:1313/bubka/tags/camaleoncms/</link>
+      <link>http://localhost:1313/tags/camaleoncms/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/camaleoncms/</guid>
+      <guid>http://localhost:1313/tags/camaleoncms/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2024-46987</title>
-      <link>http://localhost:1313/bubka/tags/cve-2024-46987/</link>
+      <link>http://localhost:1313/tags/cve-2024-46987/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2024-46987/</guid>
+      <guid>http://localhost:1313/tags/cve-2024-46987/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2025-2304</title>
-      <link>http://localhost:1313/bubka/tags/cve-2025-2304/</link>
+      <link>http://localhost:1313/tags/cve-2025-2304/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2025-2304/</guid>
+      <guid>http://localhost:1313/tags/cve-2025-2304/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Facter</title>
-      <link>http://localhost:1313/bubka/tags/facter/</link>
+      <link>http://localhost:1313/tags/facter/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/facter/</guid>
+      <guid>http://localhost:1313/tags/facter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Gobuster</title>
-      <link>http://localhost:1313/bubka/tags/gobuster/</link>
+      <link>http://localhost:1313/tags/gobuster/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/gobuster/</guid>
+      <guid>http://localhost:1313/tags/gobuster/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Nmap</title>
-      <link>http://localhost:1313/bubka/tags/nmap/</link>
+      <link>http://localhost:1313/tags/nmap/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/nmap/</guid>
+      <guid>http://localhost:1313/tags/nmap/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>S3</title>
-      <link>http://localhost:1313/bubka/tags/s3/</link>
+      <link>http://localhost:1313/tags/s3/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/s3/</guid>
+      <guid>http://localhost:1313/tags/s3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Active Directory</title>
-      <link>http://localhost:1313/bubka/tags/active-directory/</link>
+      <link>http://localhost:1313/tags/active-directory/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/active-directory/</guid>
+      <guid>http://localhost:1313/tags/active-directory/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2024-4577</title>
-      <link>http://localhost:1313/bubka/tags/cve-2024-4577/</link>
+      <link>http://localhost:1313/tags/cve-2024-4577/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2024-4577/</guid>
+      <guid>http://localhost:1313/tags/cve-2024-4577/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Mimikatz</title>
-      <link>http://localhost:1313/bubka/tags/mimikatz/</link>
+      <link>http://localhost:1313/tags/mimikatz/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/mimikatz/</guid>
+      <guid>http://localhost:1313/tags/mimikatz/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PowerView</title>
-      <link>http://localhost:1313/bubka/tags/powerview/</link>
+      <link>http://localhost:1313/tags/powerview/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/powerview/</guid>
+      <guid>http://localhost:1313/tags/powerview/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>T1190</title>
-      <link>http://localhost:1313/bubka/tags/t1190/</link>
+      <link>http://localhost:1313/tags/t1190/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/t1190/</guid>
+      <guid>http://localhost:1313/tags/t1190/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Cobalt</title>
-      <link>http://localhost:1313/bubka/tags/cobalt/</link>
+      <link>http://localhost:1313/tags/cobalt/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cobalt/</guid>
+      <guid>http://localhost:1313/tags/cobalt/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2024-14847</title>
-      <link>http://localhost:1313/bubka/tags/cve-2024-14847/</link>
+      <link>http://localhost:1313/tags/cve-2024-14847/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2024-14847/</guid>
+      <guid>http://localhost:1313/tags/cve-2024-14847/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Mini Dump</title>
-      <link>http://localhost:1313/bubka/tags/mini-dump/</link>
+      <link>http://localhost:1313/tags/mini-dump/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/mini-dump/</guid>
+      <guid>http://localhost:1313/tags/mini-dump/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Mongodb</title>
-      <link>http://localhost:1313/bubka/tags/mongodb/</link>
+      <link>http://localhost:1313/tags/mongodb/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/mongodb/</guid>
+      <guid>http://localhost:1313/tags/mongodb/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>WinDBG</title>
-      <link>http://localhost:1313/bubka/tags/windbg/</link>
+      <link>http://localhost:1313/tags/windbg/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/windbg/</guid>
+      <guid>http://localhost:1313/tags/windbg/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ELF</title>
-      <link>http://localhost:1313/bubka/tags/elf/</link>
+      <link>http://localhost:1313/tags/elf/</link>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/elf/</guid>
+      <guid>http://localhost:1313/tags/elf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Srand</title>
-      <link>http://localhost:1313/bubka/tags/srand/</link>
+      <link>http://localhost:1313/tags/srand/</link>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/srand/</guid>
+      <guid>http://localhost:1313/tags/srand/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>LKM</title>
-      <link>http://localhost:1313/bubka/tags/lkm/</link>
+      <link>http://localhost:1313/tags/lkm/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/lkm/</guid>
+      <guid>http://localhost:1313/tags/lkm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rootkit</title>
-      <link>http://localhost:1313/bubka/tags/rootkit/</link>
+      <link>http://localhost:1313/tags/rootkit/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rootkit/</guid>
+      <guid>http://localhost:1313/tags/rootkit/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Packer</title>
-      <link>http://localhost:1313/bubka/tags/packer/</link>
+      <link>http://localhost:1313/tags/packer/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/packer/</guid>
+      <guid>http://localhost:1313/tags/packer/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>X64dbg</title>
-      <link>http://localhost:1313/bubka/tags/x64dbg/</link>
+      <link>http://localhost:1313/tags/x64dbg/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/x64dbg/</guid>
+      <guid>http://localhost:1313/tags/x64dbg/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rust</title>
-      <link>http://localhost:1313/bubka/tags/rust/</link>
+      <link>http://localhost:1313/tags/rust/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rust/</guid>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rust-Gdb</title>
-      <link>http://localhost:1313/bubka/tags/rust-gdb/</link>
+      <link>http://localhost:1313/tags/rust-gdb/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rust-gdb/</guid>
+      <guid>http://localhost:1313/tags/rust-gdb/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Salsa20</title>
-      <link>http://localhost:1313/bubka/tags/salsa20/</link>
+      <link>http://localhost:1313/tags/salsa20/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/salsa20/</guid>
+      <guid>http://localhost:1313/tags/salsa20/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Avr</title>
-      <link>http://localhost:1313/bubka/tags/avr/</link>
+      <link>http://localhost:1313/tags/avr/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/avr/</guid>
+      <guid>http://localhost:1313/tags/avr/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ghidra</title>
-      <link>http://localhost:1313/bubka/tags/ghidra/</link>
+      <link>http://localhost:1313/tags/ghidra/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/ghidra/</guid>
+      <guid>http://localhost:1313/tags/ghidra/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Excel</title>
-      <link>http://localhost:1313/bubka/tags/excel/</link>
+      <link>http://localhost:1313/tags/excel/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/excel/</guid>
+      <guid>http://localhost:1313/tags/excel/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Oleid</title>
-      <link>http://localhost:1313/bubka/tags/oleid/</link>
+      <link>http://localhost:1313/tags/oleid/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/oleid/</guid>
+      <guid>http://localhost:1313/tags/oleid/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Xlm-Macros</title>
-      <link>http://localhost:1313/bubka/tags/xlm-macros/</link>
+      <link>http://localhost:1313/tags/xlm-macros/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/xlm-macros/</guid>
+      <guid>http://localhost:1313/tags/xlm-macros/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Xlmdeobfuscator</title>
-      <link>http://localhost:1313/bubka/tags/xlmdeobfuscator/</link>
+      <link>http://localhost:1313/tags/xlmdeobfuscator/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/xlmdeobfuscator/</guid>
+      <guid>http://localhost:1313/tags/xlmdeobfuscator/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2024-48990</title>
-      <link>http://localhost:1313/bubka/tags/cve-2024-48990/</link>
+      <link>http://localhost:1313/tags/cve-2024-48990/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2024-48990/</guid>
+      <guid>http://localhost:1313/tags/cve-2024-48990/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>File-Upload</title>
-      <link>http://localhost:1313/bubka/tags/file-upload/</link>
+      <link>http://localhost:1313/tags/file-upload/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/file-upload/</guid>
+      <guid>http://localhost:1313/tags/file-upload/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Needrestart</title>
-      <link>http://localhost:1313/bubka/tags/needrestart/</link>
+      <link>http://localhost:1313/tags/needrestart/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/needrestart/</guid>
+      <guid>http://localhost:1313/tags/needrestart/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Path-Traversal</title>
-      <link>http://localhost:1313/bubka/tags/path-traversal/</link>
+      <link>http://localhost:1313/tags/path-traversal/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/path-traversal/</guid>
+      <guid>http://localhost:1313/tags/path-traversal/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Sqlite</title>
-      <link>http://localhost:1313/bubka/tags/sqlite/</link>
+      <link>http://localhost:1313/tags/sqlite/</link>
       <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/sqlite/</guid>
+      <guid>http://localhost:1313/tags/sqlite/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PoshC2</title>
-      <link>http://localhost:1313/bubka/tags/poshc2/</link>
+      <link>http://localhost:1313/tags/poshc2/</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/poshc2/</guid>
+      <guid>http://localhost:1313/tags/poshc2/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Pdf-Parser</title>
-      <link>http://localhost:1313/bubka/tags/pdf-parser/</link>
+      <link>http://localhost:1313/tags/pdf-parser/</link>
       <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/pdf-parser/</guid>
+      <guid>http://localhost:1313/tags/pdf-parser/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Pdfid</title>
-      <link>http://localhost:1313/bubka/tags/pdfid/</link>
+      <link>http://localhost:1313/tags/pdfid/</link>
       <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/pdfid/</guid>
+      <guid>http://localhost:1313/tags/pdfid/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>VBScript</title>
-      <link>http://localhost:1313/bubka/tags/vbscript/</link>
+      <link>http://localhost:1313/tags/vbscript/</link>
       <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/vbscript/</guid>
+      <guid>http://localhost:1313/tags/vbscript/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CVE-2017-0199</title>
-      <link>http://localhost:1313/bubka/tags/cve-2017-0199/</link>
+      <link>http://localhost:1313/tags/cve-2017-0199/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/cve-2017-0199/</guid>
+      <guid>http://localhost:1313/tags/cve-2017-0199/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>RTF</title>
-      <link>http://localhost:1313/bubka/tags/rtf/</link>
+      <link>http://localhost:1313/tags/rtf/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rtf/</guid>
+      <guid>http://localhost:1313/tags/rtf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rtfobj</title>
-      <link>http://localhost:1313/bubka/tags/rtfobj/</link>
+      <link>http://localhost:1313/tags/rtfobj/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/tags/rtfobj/</guid>
+      <guid>http://localhost:1313/tags/rtfobj/</guid>
       <description></description>
       
     </item>

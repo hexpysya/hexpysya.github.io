@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shellcode Analysis on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/shellcode-analysis/</link>
+    <link>http://localhost:1313/tags/shellcode-analysis/</link>
     <description>Recent content in Shellcode Analysis on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/shellcode-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/shellcode-analysis/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTB-oBfsC4t10n</title>
-      <link>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</link>
+      <link>http://localhost:1313/investigations/htb-obfsc4t10n/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</guid>
+      <guid>http://localhost:1313/investigations/htb-obfsc4t10n/</guid>
       <description>A phishing HTML file masquerading as an invoice delivers a macro-enabled Excel workbook that drops and executes a multi-stage obfuscated HTA payload, ultimately injecting a reverse shell shellcode into rundll32.exe and establishing a C2 connection.</description>
       
     </item>
     
     <item>
       <title>PoshC2: Sharp_v4_x64.dll</title>
-      <link>http://localhost:1313/bubka/investigations/poschc2-sharp_v4_x64.dll/</link>
+      <link>http://localhost:1313/investigations/poschc2-sharp_v4_x64.dll/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/poschc2-sharp_v4_x64.dll/</guid>
+      <guid>http://localhost:1313/investigations/poschc2-sharp_v4_x64.dll/</guid>
       <description>A .NET DLL decodes architecture-specific shellcode from an embedded base64 string, allocates executable memory, and spawns a thread to execute it. The shellcode performs NTDLL unhooking, AMSI and ETW patching before executing an embedded PE payload identified as a PoshC2 dropper.</description>
       
     </item>

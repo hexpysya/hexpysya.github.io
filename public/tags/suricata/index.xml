@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Suricata on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/suricata/</link>
+    <link>http://localhost:1313/tags/suricata/</link>
     <description>Recent content in Suricata on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/suricata/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/suricata/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wazuh &#43; Suricata: Malware traffic</title>
-      <link>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata-malware-traffic/</link>
+      <link>http://localhost:1313/blue_team/wazuh&#43;suricata-malware-traffic/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata-malware-traffic/</guid>
+      <guid>http://localhost:1313/blue_team/wazuh&#43;suricata-malware-traffic/</guid>
       <description>Replayed a malicious PCAP file containing Hancitor dropper traffic that deployed Cobalt Strike, Dridex, and Ficker Stealer. Analyzed 423 Suricata alerts in Wazuh, reconstructed the full infection chain, and mapped findings to MITRE ATT&amp;amp;CK.</description>
       
     </item>

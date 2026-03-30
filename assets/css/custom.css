@@ -27,6 +27,13 @@ body a {
 }
 
 
+.hl {
+  color: black;
+}
+
+.dark .hl {
+  color: lightblue;
+}
 
 
 .meta-box {

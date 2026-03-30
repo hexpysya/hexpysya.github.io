@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mini Dump on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/mini-dump/</link>
+    <link>http://localhost:1313/tags/mini-dump/</link>
     <description>Recent content in Mini Dump on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/mini-dump/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mini-dump/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTB-CrashDump</title>
-      <link>http://localhost:1313/bubka/investigations/htb-crashdump/</link>
+      <link>http://localhost:1313/investigations/htb-crashdump/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-crashdump/</guid>
+      <guid>http://localhost:1313/investigations/htb-crashdump/</guid>
       <description>Analyzed two process dumps (notepad.exe and update.exe) revealing a Cobalt Strike Beacon infection. The malware used process injection with reflective DLL loading, communicated with C2 server at &lt;code&gt;101.10.25.4:8023&lt;/code&gt;, and possessed capabilities for privilege escalation, token manipulation, and lateral movement via named pipes.</description>
       
     </item>

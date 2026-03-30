@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Telnet on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/telnet/</link>
+    <link>http://localhost:1313/tags/telnet/</link>
     <description>Recent content in Telnet on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/telnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/telnet/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTB-Telly</title>
-      <link>http://localhost:1313/bubka/investigations/htb-telly/</link>
+      <link>http://localhost:1313/investigations/htb-telly/</link>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-telly/</guid>
+      <guid>http://localhost:1313/investigations/htb-telly/</guid>
       <description>An attacker exploited CVE-2026-24061, an authentication bypass in GNU inetutils telnetd, to obtain an unauthenticated root shell, established persistence via linper.sh across multiple cron and systemd locations, and exfiltrated a credit card database before deleting it from the victim server.</description>
       
     </item>

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LNK on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/lnk/</link>
+    <link>http://localhost:1313/tags/lnk/</link>
     <description>Recent content in LNK on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/lnk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/lnk/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTB-Liberty</title>
-      <link>http://localhost:1313/bubka/investigations/htb-liberty/</link>
+      <link>http://localhost:1313/investigations/htb-liberty/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-liberty/</guid>
+      <guid>http://localhost:1313/investigations/htb-liberty/</guid>
       <description>Password spraying led to domain account compromise, followed by NetNTLM hash theft via a malicious .url file, RDP access, data exfiltration to a C2 server, and PSWA backdoor installation for persistence.</description>
       
     </item>
     
     <item>
       <title>HTB-A Call from the Museum</title>
-      <link>http://localhost:1313/bubka/investigations/htb-a-call-from-the-museum/</link>
+      <link>http://localhost:1313/investigations/htb-a-call-from-the-museum/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-a-call-from-the-museum/</guid>
+      <guid>http://localhost:1313/investigations/htb-a-call-from-the-museum/</guid>
       <description>A phishing email with a password-protected ZIP delivered an LNK file that executed an obfuscated PowerShell stager — collecting system fingerprint data, checking in to a C2, and fetching a next-stage implant using hardcoded credentials. A decoy PDF was opened simultaneously to distract the victim.</description>
       
     </item>

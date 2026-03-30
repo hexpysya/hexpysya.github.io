@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VBA on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/vba/</link>
+    <link>http://localhost:1313/tags/vba/</link>
     <description>Recent content in VBA on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/vba/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vba/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CDEF-Obfuscated</title>
-      <link>http://localhost:1313/bubka/investigations/cdef-obfuscated/</link>
+      <link>http://localhost:1313/investigations/cdef-obfuscated/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/cdef-obfuscated/</guid>
+      <guid>http://localhost:1313/investigations/cdef-obfuscated/</guid>
       <description>A malicious Word document uses a password-protected AutoOpen macro to drop and execute js script, which decrypts an embedded blob into stage2.js. It is a implant that establishes persistence via a hidden scheduled task, collects system reconnaissance, and beacons to two compromised WordPress C2 servers, downloading and executing a next-stage .pif payload</description>
       
     </item>
     
     <item>
       <title>HTB-oBfsC4t10n</title>
-      <link>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</link>
+      <link>http://localhost:1313/investigations/htb-obfsc4t10n/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</guid>
+      <guid>http://localhost:1313/investigations/htb-obfsc4t10n/</guid>
       <description>A phishing HTML file masquerading as an invoice delivers a macro-enabled Excel workbook that drops and executes a multi-stage obfuscated HTA payload, ultimately injecting a reverse shell shellcode into rundll32.exe and establishing a C2 connection.</description>
       
     </item>

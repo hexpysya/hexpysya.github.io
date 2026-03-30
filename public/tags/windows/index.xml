@@ -2,219 +2,219 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/windows/</link>
+    <link>http://localhost:1313/tags/windows/</link>
     <description>Recent content in Windows on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTB-Liberty</title>
-      <link>http://localhost:1313/bubka/investigations/htb-liberty/</link>
+      <link>http://localhost:1313/investigations/htb-liberty/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-liberty/</guid>
+      <guid>http://localhost:1313/investigations/htb-liberty/</guid>
       <description>Password spraying led to domain account compromise, followed by NetNTLM hash theft via a malicious .url file, RDP access, data exfiltration to a C2 server, and PSWA backdoor installation for persistence.</description>
       
     </item>
     
     <item>
       <title>CDEF-Obfuscated</title>
-      <link>http://localhost:1313/bubka/investigations/cdef-obfuscated/</link>
+      <link>http://localhost:1313/investigations/cdef-obfuscated/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/cdef-obfuscated/</guid>
+      <guid>http://localhost:1313/investigations/cdef-obfuscated/</guid>
       <description>A malicious Word document uses a password-protected AutoOpen macro to drop and execute js script, which decrypts an embedded blob into stage2.js. It is a implant that establishes persistence via a hidden scheduled task, collects system reconnaissance, and beacons to two compromised WordPress C2 servers, downloading and executing a next-stage .pif payload</description>
       
     </item>
     
     <item>
       <title>CDEF-$tealer</title>
-      <link>http://localhost:1313/bubka/investigations/cdef-tealer/</link>
+      <link>http://localhost:1313/investigations/cdef-tealer/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/cdef-tealer/</guid>
+      <guid>http://localhost:1313/investigations/cdef-tealer/</guid>
       <description>A Dridex loader DLL that dynamically resolves APIs via CRC32 hashing, uses int3/retn as an indirect call mechanism to evade analysis, decrypts embedded strings with RC4, and connects to four hardcoded C2 servers over HTTPS to download additional modules.</description>
       
     </item>
     
     <item>
       <title>CDEF-XWorm</title>
-      <link>http://localhost:1313/bubka/investigations/cdef-xworm/</link>
+      <link>http://localhost:1313/investigations/cdef-xworm/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/cdef-xworm/</guid>
+      <guid>http://localhost:1313/investigations/cdef-xworm/</guid>
       <description>A .NET XWorm RAT that establishes triple persistence via scheduled task, startup shortcut, and registry Run key, implements keylogging, clipboard hijacking for crypto wallets, and communicates with multiple C2 servers over TCP using AES-ECB encrypted payloads.</description>
       
     </item>
     
     <item>
       <title>HTB-SecretPictures</title>
-      <link>http://localhost:1313/bubka/investigations/htb-secretpictures/</link>
+      <link>http://localhost:1313/investigations/htb-secretpictures/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-secretpictures/</guid>
+      <guid>http://localhost:1313/investigations/htb-secretpictures/</guid>
       <description>A Go-based backdoor that copies itself to a system directory, establishes persistence via a registry Run key, enumerates connected drives, and attempts to connect to a hardcoded C2 domain.</description>
       
     </item>
     
     <item>
       <title>HTB-Subatomic</title>
-      <link>http://localhost:1313/bubka/investigations/htb-subatomic/</link>
+      <link>http://localhost:1313/investigations/htb-subatomic/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-subatomic/</guid>
+      <guid>http://localhost:1313/investigations/htb-subatomic/</guid>
       <description>A fake therapy installer distributed as an NSIS self-extracting archive delivers an Electron-based Node.js infostealer that performs anti-VM checks, injects malicious code into Discord clients, and exfiltrates browser credentials, cookies, autofill data, and Discord tokens to a hardcoded C2.</description>
       
     </item>
     
     <item>
       <title>HTB-oBfsC4t10n</title>
-      <link>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</link>
+      <link>http://localhost:1313/investigations/htb-obfsc4t10n/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</guid>
+      <guid>http://localhost:1313/investigations/htb-obfsc4t10n/</guid>
       <description>A phishing HTML file masquerading as an invoice delivers a macro-enabled Excel workbook that drops and executes a multi-stage obfuscated HTA payload, ultimately injecting a reverse shell shellcode into rundll32.exe and establishing a C2 connection.</description>
       
     </item>
     
     <item>
       <title>HTB-WorkFromHome</title>
-      <link>http://localhost:1313/bubka/investigations/htb-workfromhome/</link>
+      <link>http://localhost:1313/investigations/htb-workfromhome/</link>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-workfromhome/</guid>
+      <guid>http://localhost:1313/investigations/htb-workfromhome/</guid>
       <description>A victim clicked a phishing link impersonating a corporate login page, leading to credential theft. The attacker used stolen credentials to gain RDP access, then escalated privileges via SeManageVolumeExploit, deployed malicious DLLs using certutil, and established persistence through a hidden VBS script in the Startup folder.</description>
       
     </item>
     
     <item>
       <title>HTB-Lupin</title>
-      <link>http://localhost:1313/bubka/investigations/htb-lupin/</link>
+      <link>http://localhost:1313/investigations/htb-lupin/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-lupin/</guid>
+      <guid>http://localhost:1313/investigations/htb-lupin/</guid>
       <description>Reverse engineering PHORPIEX dropper - analyzing clipboard hijacking, USB spreading, and UPnP NAT traversal techniques.</description>
       
     </item>
     
     <item>
       <title>HTB-EasyMoney</title>
-      <link>http://localhost:1313/bubka/investigations/htb-easymoney/</link>
+      <link>http://localhost:1313/investigations/htb-easymoney/</link>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-easymoney/</guid>
+      <guid>http://localhost:1313/investigations/htb-easymoney/</guid>
       <description>Administrator executed a malicious shortcut that triggered a hidden PowerShell command, downloading and executing payload and gaining a shell access. The attacker enumerated installed software, identified a vulnerable Yandex Browser (CVE-2024-6473), and exploited DLL hijacking by planting a malicious library that acts as a dropper. This dropper deployed a Sliver C2 implant establishing persistence via a scheduled task and maintaining communication</description>
       
     </item>
     
     <item>
       <title>HTB-SneakyKeys</title>
-      <link>http://localhost:1313/bubka/investigations/htb-sneakykeys/</link>
+      <link>http://localhost:1313/investigations/htb-sneakykeys/</link>
       <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-sneakykeys/</guid>
+      <guid>http://localhost:1313/investigations/htb-sneakykeys/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>HTB-GhostTrace</title>
-      <link>http://localhost:1313/bubka/investigations/htb-ghosttrace/</link>
+      <link>http://localhost:1313/investigations/htb-ghosttrace/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-ghosttrace/</guid>
+      <guid>http://localhost:1313/investigations/htb-ghosttrace/</guid>
       <description>Analyzed Windows Event Logs revealing a complete AD compromise chain: phishing email with macro-enabled document → credential dumping with Mimikatz → lateral movement via PsExec → DCSync attack → domain admin compromise → persistence via scheduled task, service, and registry run key.</description>
       
     </item>
     
     <item>
       <title>HTB-Packet_Puzzle</title>
-      <link>http://localhost:1313/bubka/investigations/htb-packet-_puzzle/</link>
+      <link>http://localhost:1313/investigations/htb-packet-_puzzle/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-packet-_puzzle/</guid>
+      <guid>http://localhost:1313/investigations/htb-packet-_puzzle/</guid>
       <description>Analyzed network traffic showing exploitation of CVE-2024-4577 (PHP-CGI argument injection) against a Windows server running PHP 8.1.25. Attacker achieved RCE, established reverse shell on port 4545, then escalated privileges using GodPotato to spawn a SYSTEM-level shell on port 5555.</description>
       
     </item>
     
     <item>
       <title>HTB-CrashDump</title>
-      <link>http://localhost:1313/bubka/investigations/htb-crashdump/</link>
+      <link>http://localhost:1313/investigations/htb-crashdump/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-crashdump/</guid>
+      <guid>http://localhost:1313/investigations/htb-crashdump/</guid>
       <description>Analyzed two process dumps (notepad.exe and update.exe) revealing a Cobalt Strike Beacon infection. The malware used process injection with reflective DLL loading, communicated with C2 server at &lt;code&gt;101.10.25.4:8023&lt;/code&gt;, and possessed capabilities for privilege escalation, token manipulation, and lateral movement via named pipes.</description>
       
     </item>
     
     <item>
       <title>HTB-Bypass</title>
-      <link>http://localhost:1313/bubka/investigations/htb-bypass/</link>
+      <link>http://localhost:1313/investigations/htb-bypass/</link>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-bypass/</guid>
+      <guid>http://localhost:1313/investigations/htb-bypass/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>HTB-Partial_Encryption</title>
-      <link>http://localhost:1313/bubka/investigations/htb-partial_encryption/</link>
+      <link>http://localhost:1313/investigations/htb-partial_encryption/</link>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-partial_encryption/</guid>
+      <guid>http://localhost:1313/investigations/htb-partial_encryption/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PoshC2: Sharp_v4_x64.dll</title>
-      <link>http://localhost:1313/bubka/investigations/poschc2-sharp_v4_x64.dll/</link>
+      <link>http://localhost:1313/investigations/poschc2-sharp_v4_x64.dll/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/poschc2-sharp_v4_x64.dll/</guid>
+      <guid>http://localhost:1313/investigations/poschc2-sharp_v4_x64.dll/</guid>
       <description>A .NET DLL decodes architecture-specific shellcode from an embedded base64 string, allocates executable memory, and spawns a thread to execute it. The shellcode performs NTDLL unhooking, AMSI and ETW patching before executing an embedded PE payload identified as a PoshC2 dropper.</description>
       
     </item>
     
     <item>
       <title>PoshC2: Dropper-cs.exe</title>
-      <link>http://localhost:1313/bubka/investigations/dropper-cs.exe-analysis/</link>
+      <link>http://localhost:1313/investigations/dropper-cs.exe-analysis/</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/dropper-cs.exe-analysis/</guid>
+      <guid>http://localhost:1313/investigations/dropper-cs.exe-analysis/</guid>
       <description>C2 .NET implant. AES-encrypted config, HTTPS beacon to &lt;code&gt;192.168.248.128&lt;/code&gt;, fileless in-memory execution, anti-debug via divide-by-zero.</description>
       
     </item>
     
     <item>
       <title>Metasploit: adobe_pdf_embedded_exe_nojs</title>
-      <link>http://localhost:1313/bubka/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</link>
+      <link>http://localhost:1313/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</link>
       <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</guid>
+      <guid>http://localhost:1313/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</guid>
       <description>A malicious PDF uses a Launch action to execute cmd.exe, which runs an inline VBScript that reads hex-encoded shellcode directly from the PDF body, writes it to disk as an executable, and launches a Metasploit reverse shell.</description>
       
     </item>
     
     <item>
       <title>Metasploit: adobe-pdf-embedded-file</title>
-      <link>http://localhost:1313/bubka/investigations/metasploit-adobe-pdf-embedded-file/</link>
+      <link>http://localhost:1313/investigations/metasploit-adobe-pdf-embedded-file/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/metasploit-adobe-pdf-embedded-file/</guid>
+      <guid>http://localhost:1313/investigations/metasploit-adobe-pdf-embedded-file/</guid>
       <description>A malicious PDF exploits JavaScript and Launch actions to extract and execute an embedded PE payload, establishing a reverse shell connection to an attacker-controlled server.</description>
       
     </item>
     
     <item>
       <title>Metasploit: office_word_hta</title>
-      <link>http://localhost:1313/bubka/investigations/metasploit-office_word_hta/</link>
+      <link>http://localhost:1313/investigations/metasploit-office_word_hta/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/metasploit-office_word_hta/</guid>
+      <guid>http://localhost:1313/investigations/metasploit-office_word_hta/</guid>
       <description>A malicious RTF document exploits CVE-2017-0199 via an embedded OLE2Link object to fetch and execute a remote HTA payload from an attacker-controlled server.</description>
       
     </item>

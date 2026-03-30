@@ -3,191 +3,195 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/bubka/investigations/</loc>
+    <loc>http://localhost:1313/investigations/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/cdef-hawkeye/</loc>
+    <loc>http://localhost:1313/investigations/cdef-hawkeye/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-liberty/</loc>
+    <loc>http://localhost:1313/investigations/htb-liberty/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/cdef-obfuscated/</loc>
+    <loc>http://localhost:1313/investigations/cdef-obfuscated/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/cdef-ransomed/</loc>
+    <loc>http://localhost:1313/investigations/cdef-ransomed/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/</loc>
+    <loc>http://localhost:1313/blue_team/</loc>
     <lastmod>2026-03-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/ld-malicious-attachment-detected---phishing-alert/</loc>
+    <loc>http://localhost:1313/blue_team/ld-phishing-alert/</loc>
     <lastmod>2026-03-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/thm-phishing-unfolding/</loc>
+    <loc>http://localhost:1313/blue_team/ld-malicious-attachment-detected---phishing-alert/</loc>
     <lastmod>2026-03-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-lockpick3.0/</loc>
+    <loc>http://localhost:1313/blue_team/thm-phishing-unfolding/</loc>
+    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/investigations/htb-lockpick3.0/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/ld-soc153---suspicious-powershell-script-executed/</loc>
+    <loc>http://localhost:1313/blue_team/ld-soc153---suspicious-powershell-script-executed/</loc>
     <lastmod>2026-03-14T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/cdef-bluesky-ransomware/</loc>
+    <loc>http://localhost:1313/investigations/cdef-bluesky-ransomware/</loc>
     <lastmod>2026-03-10T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/thm-phishing/</loc>
+    <loc>http://localhost:1313/blue_team/thm-phishing/</loc>
     <lastmod>2026-03-10T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/wazuh-injection/</loc>
+    <loc>http://localhost:1313/blue_team/wazuh-injection/</loc>
     <lastmod>2026-03-09T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-a-call-from-the-museum/</loc>
+    <loc>http://localhost:1313/investigations/htb-a-call-from-the-museum/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-telly/</loc>
+    <loc>http://localhost:1313/investigations/htb-telly/</loc>
     <lastmod>2026-03-06T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/cdef-tealer/</loc>
+    <loc>http://localhost:1313/investigations/cdef-tealer/</loc>
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/wazuh&#43;suricata-malware-traffic/</loc>
+    <loc>http://localhost:1313/blue_team/wazuh&#43;suricata-malware-traffic/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/cdef-xworm/</loc>
+    <loc>http://localhost:1313/investigations/cdef-xworm/</loc>
     <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-secretpictures/</loc>
+    <loc>http://localhost:1313/investigations/htb-secretpictures/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-subatomic/</loc>
+    <loc>http://localhost:1313/investigations/htb-subatomic/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</loc>
+    <loc>http://localhost:1313/investigations/htb-obfsc4t10n/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/blue_team/wazuh_ssh-brute-force/</loc>
+    <loc>http://localhost:1313/blue_team/wazuh_ssh-brute-force/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-workfromhome/</loc>
+    <loc>http://localhost:1313/investigations/htb-workfromhome/</loc>
     <lastmod>2026-02-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-pterodactyl/</loc>
+    <loc>http://localhost:1313/investigations/htb-pterodactyl/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-lupin/</loc>
+    <loc>http://localhost:1313/investigations/htb-lupin/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-easymoney/</loc>
+    <loc>http://localhost:1313/investigations/htb-easymoney/</loc>
     <lastmod>2026-02-05T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-sneakykeys/</loc>
+    <loc>http://localhost:1313/investigations/htb-sneakykeys/</loc>
     <lastmod>2026-02-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-luckyshot/</loc>
+    <loc>http://localhost:1313/investigations/htb-luckyshot/</loc>
     <lastmod>2026-02-02T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-facts/</loc>
+    <loc>http://localhost:1313/investigations/htb-facts/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-ghosttrace/</loc>
+    <loc>http://localhost:1313/investigations/htb-ghosttrace/</loc>
     <lastmod>2026-01-31T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-packet-_puzzle/</loc>
+    <loc>http://localhost:1313/investigations/htb-packet-_puzzle/</loc>
     <lastmod>2026-01-31T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-crashdump/</loc>
+    <loc>http://localhost:1313/investigations/htb-crashdump/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-mongobleed/</loc>
+    <loc>http://localhost:1313/investigations/htb-mongobleed/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-wayback/</loc>
+    <loc>http://localhost:1313/investigations/htb-wayback/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-bypass/</loc>
+    <loc>http://localhost:1313/investigations/htb-bypass/</loc>
     <lastmod>2026-01-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-cyberpsychosis/</loc>
+    <loc>http://localhost:1313/investigations/htb-cyberpsychosis/</loc>
     <lastmod>2026-01-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-partial_encryption/</loc>
+    <loc>http://localhost:1313/investigations/htb-partial_encryption/</loc>
     <lastmod>2026-01-26T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-rauth/</loc>
+    <loc>http://localhost:1313/investigations/htb-rauth/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-hubbub/</loc>
+    <loc>http://localhost:1313/investigations/htb-hubbub/</loc>
     <lastmod>2026-01-21T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-obfsc4t10n2/</loc>
+    <loc>http://localhost:1313/investigations/htb-obfsc4t10n2/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/htb-conversor/</loc>
+    <loc>http://localhost:1313/investigations/htb-conversor/</loc>
     <lastmod>2026-01-19T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/poschc2-sharp_v4_x64.dll/</loc>
+    <loc>http://localhost:1313/investigations/poschc2-sharp_v4_x64.dll/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/dropper-cs.exe-analysis/</loc>
+    <loc>http://localhost:1313/investigations/dropper-cs.exe-analysis/</loc>
     <lastmod>2025-11-23T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</loc>
+    <loc>http://localhost:1313/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</loc>
     <lastmod>2025-11-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/metasploit-adobe-pdf-embedded-file/</loc>
+    <loc>http://localhost:1313/investigations/metasploit-adobe-pdf-embedded-file/</loc>
     <lastmod>2025-11-21T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bubka/investigations/metasploit-office_word_hta/</loc>
+    <loc>http://localhost:1313/investigations/metasploit-office_word_hta/</loc>
     <lastmod>2025-11-21T00:00:00+00:00</lastmod>
   </url>
 </urlset>

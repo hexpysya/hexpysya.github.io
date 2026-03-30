@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Facter on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/facter/</link>
+    <link>http://localhost:1313/tags/facter/</link>
     <description>Recent content in Facter on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/facter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/facter/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTB-Facts</title>
-      <link>http://localhost:1313/bubka/investigations/htb-facts/</link>
+      <link>http://localhost:1313/investigations/htb-facts/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-facts/</guid>
+      <guid>http://localhost:1313/investigations/htb-facts/</guid>
       <description>Discovered Camaleon CMS 2.9.0 with two critical vulnerabilities: CVE-2025-2304 (mass assignment privilege escalation) and CVE-2024-46987 (path traversal). Escalated to admin, extracted S3 credentials, downloaded SSH private key from MinIO bucket, cracked passphrase, and achieved root via sudo facter exploitation.</description>
       
     </item>

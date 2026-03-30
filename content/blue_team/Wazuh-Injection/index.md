@@ -1,5 +1,5 @@
 ---
-title: "Wazuh + Suricata: SQL injection detection"
+title: "Wazuh + Suricata: injection detection"
 date: 2026-03-09
 draft: false
 summary: "Detected a SQL Injection attack, observed 85 alerts across 6 rule IDs, and configured automated IP blocking via active response."

@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sandbox on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/sandbox/</link>
+    <link>http://localhost:1313/tags/sandbox/</link>
     <description>Recent content in Sandbox on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/sandbox/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sandbox/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CDEF-XWorm</title>
-      <link>http://localhost:1313/bubka/investigations/cdef-xworm/</link>
+      <link>http://localhost:1313/investigations/cdef-xworm/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/cdef-xworm/</guid>
+      <guid>http://localhost:1313/investigations/cdef-xworm/</guid>
       <description>A .NET XWorm RAT that establishes triple persistence via scheduled task, startup shortcut, and registry Run key, implements keylogging, clipboard hijacking for crypto wallets, and communicates with multiple C2 servers over TCP using AES-ECB encrypted payloads.</description>
       
     </item>
     
     <item>
       <title>HTB-SecretPictures</title>
-      <link>http://localhost:1313/bubka/investigations/htb-secretpictures/</link>
+      <link>http://localhost:1313/investigations/htb-secretpictures/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-secretpictures/</guid>
+      <guid>http://localhost:1313/investigations/htb-secretpictures/</guid>
       <description>A Go-based backdoor that copies itself to a system directory, establishes persistence via a registry Run key, enumerates connected drives, and attempts to connect to a hardcoded C2 domain.</description>
       
     </item>
     
     <item>
       <title>HTB-oBfsC4t10n</title>
-      <link>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</link>
+      <link>http://localhost:1313/investigations/htb-obfsc4t10n/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/htb-obfsc4t10n/</guid>
+      <guid>http://localhost:1313/investigations/htb-obfsc4t10n/</guid>
       <description>A phishing HTML file masquerading as an invoice delivers a macro-enabled Excel workbook that drops and executes a multi-stage obfuscated HTA payload, ultimately injecting a reverse shell shellcode into rundll32.exe and establishing a C2 connection.</description>
       
     </item>
     
     <item>
       <title>Metasploit: adobe_pdf_embedded_exe_nojs</title>
-      <link>http://localhost:1313/bubka/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</link>
+      <link>http://localhost:1313/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</link>
       <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</guid>
+      <guid>http://localhost:1313/investigations/metasploit-adobe_pdf_embedded_exe_nojs/</guid>
       <description>A malicious PDF uses a Launch action to execute cmd.exe, which runs an inline VBScript that reads hex-encoded shellcode directly from the PDF body, writes it to disk as an executable, and launches a Metasploit reverse shell.</description>
       
     </item>
     
     <item>
       <title>Metasploit: adobe-pdf-embedded-file</title>
-      <link>http://localhost:1313/bubka/investigations/metasploit-adobe-pdf-embedded-file/</link>
+      <link>http://localhost:1313/investigations/metasploit-adobe-pdf-embedded-file/</link>
       <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/investigations/metasploit-adobe-pdf-embedded-file/</guid>
+      <guid>http://localhost:1313/investigations/metasploit-adobe-pdf-embedded-file/</guid>
       <description>A malicious PDF exploits JavaScript and Launch actions to extract and execute an embedded PE payload, establishing a reverse shell connection to an attacker-controlled server.</description>
       
     </item>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL Injection on bubka hacks stuff</title>
-    <link>http://localhost:1313/bubka/tags/sql-injection/</link>
+    <link>http://localhost:1313/tags/sql-injection/</link>
     <description>Recent content in SQL Injection on bubka hacks stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/bubka/tags/sql-injection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sql-injection/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Wazuh &#43; Suricata: SQL injection detection</title>
-      <link>http://localhost:1313/bubka/blue_team/wazuh-injection/</link>
+      <title>Wazuh &#43; Suricata: injection detection</title>
+      <link>http://localhost:1313/blue_team/wazuh-injection/</link>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bubka/blue_team/wazuh-injection/</guid>
+      <guid>http://localhost:1313/blue_team/wazuh-injection/</guid>
       <description>Detected a SQL Injection attack, observed 85 alerts across 6 rule IDs, and configured automated IP blocking via active response.</description>
       
     </item>
