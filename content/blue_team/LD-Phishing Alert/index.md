@@ -5,11 +5,11 @@ draft: false
 summary: "A phishing email with a password-protected ZIP delivered AsyncRAT via a SILENTBUILDER dropper. The victim executed the payload, establishing an active C2 channel and triggering full host reconnaissance before containment."
 tags:
   - SOC
-  - LetsDefend
+  - Log Analysis
+  - Network Analysis
   - Phishing
   - AsyncRAT
-  - SILENTBUILDER
-  - Escalated to L2
+  - L2 Escalation
 platform: LetsDefend
 ---
 
