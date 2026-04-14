@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AgentTesla on bubka hacks stuff</title>
+    <link>http://localhost:1313/tags/agenttesla/</link>
+    <description>Recent content in AgentTesla on bubka hacks stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/agenttesla/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CDEF-Lockdown</title>
+      <link>http://localhost:1313/investigations/cdef-lockdown/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/investigations/cdef-lockdown/</guid>
+      <description>An attacker performed SYN port scanning against an IIS server, enumerated open SMB shares, uploaded a webshell to the Documents share, triggered a reverse shell on port 4443, and established persistence via AgentTesla dropped into the Startup folder, which exfiltrated data via SMTP to cp8nl.hyperhost.ua.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

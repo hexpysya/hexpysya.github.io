@@ -5,8 +5,20 @@ draft: false
 summary: "A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration."
 tags:
   - SOC
+  - SIEM
+  - EDR
   - Log Analysis
   - Phishing
+  - Lumma Stealer
+  - Click Fix
+  - PowerShell
+  - LOLBins
+  - Mshta
+  - Infostealer
+  - VirusTotal
+  - AbuseIPDB
+  - True Positive
+  - Escalation to L2
 platform: LetsDefend
 ---
 

@@ -10,12 +10,32 @@
     <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/log-analysis/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>LD-Lumma Stealer - DLL Side-Loading via Click Fix Phishing</title>
+      <link>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</guid>
+      <description>A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration.</description>
+      
+    </item>
+    
+    <item>
       <title>LD-Malicious Macro Executed</title>
       <link>http://localhost:1313/blue_team/ld-malicious-macro-has-been-executed/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/blue_team/ld-malicious-macro-has-been-executed/</guid>
       <description>A phishing email from &lt;a href=&#34;mailto:jake.admin@cybercommunity.info&#34; &gt;jake.admin@cybercommunity.info&lt;/a&gt; delivered a ZIP-archived Word macro document, which executed a PowerShell downloader fetching messbox.exe from greyhathacker.net. The host Jayne was contained after execution was confirmed.</description>
+      
+    </item>
+    
+    <item>
+      <title>Splunk-ShadowRoast</title>
+      <link>http://localhost:1313/blue_team/splunk-shadowroast/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/splunk-shadowroast/</guid>
+      <description>User sanderson executed a masqueraded AdobeUpdater.exe that established C2 to 223.247.47.74, injected into cmd.exe, dropped Rubeus and mimikatz under fake names, performed AS-REP Roasting against four accounts including Administrator, then laterally moved to FileServer via tcooper credentials, enabled RDP, and staged C:\Shares contents for exfiltration.</description>
       
     </item>
     
@@ -106,16 +126,6 @@
       
       <guid>http://localhost:1313/blue_team/ld-ls-command-detected-in-requested-url/</guid>
       <description>Alert triggered on the string &amp;rsquo;ls&amp;rsquo; found in a legitimate search query parameter. The traffic originated from an internal IP to letsdefend.io and contains no malicious payload. False positive - rule lacks context awareness for partial string matches.</description>
-      
-    </item>
-    
-    <item>
-      <title>LD-Lumma Stealer - DLL Side-Loading via Click Fix Phishing</title>
-      <link>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</link>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</guid>
-      <description>A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration.</description>
       
     </item>
     

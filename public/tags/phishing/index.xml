@@ -10,6 +10,16 @@
     <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>LD-Lumma Stealer - DLL Side-Loading via Click Fix Phishing</title>
+      <link>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</guid>
+      <description>A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration.</description>
+      
+    </item>
+    
+    <item>
       <title>LD-Malicious Macro Executed</title>
       <link>http://localhost:1313/blue_team/ld-malicious-macro-has-been-executed/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
@@ -36,16 +46,6 @@
       
       <guid>http://localhost:1313/blue_team/elk-black-basta/</guid>
       <description>A finance employee opened a malicious Excel macro from a drive-by download, which executed a VBS dropper, loaded WindowsUpdaterFX.dll via regsvr32, established persistence, dropped Pancake.jpg.exe as a C2 backdoor, performed internal reconnaissance, laterally moved to a domain controller via PsExec using compromised credentials, exfiltrated client data to MEGA via rclone, deleted shadow copies, and deployed BlackBasta ransomware.</description>
-      
-    </item>
-    
-    <item>
-      <title>LD-Lumma Stealer - DLL Side-Loading via Click Fix Phishing</title>
-      <link>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</link>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</guid>
-      <description>A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration.</description>
       
     </item>
     

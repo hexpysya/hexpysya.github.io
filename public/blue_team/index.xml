@@ -30,6 +30,16 @@
     </item>
     
     <item>
+      <title>Splunk-ShadowRoast</title>
+      <link>http://localhost:1313/blue_team/splunk-shadowroast/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/splunk-shadowroast/</guid>
+      <description>User sanderson executed a masqueraded AdobeUpdater.exe that established C2 to 223.247.47.74, injected into cmd.exe, dropped Rubeus and mimikatz under fake names, performed AS-REP Roasting against four accounts including Administrator, then laterally moved to FileServer via tcooper credentials, enabled RDP, and staged C:\Shares contents for exfiltration.</description>
+      
+    </item>
+    
+    <item>
       <title>ELK-BumbleBee - GOLD CABIN</title>
       <link>http://localhost:1313/blue_team/elk-bumblebee---gold-cabin/</link>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
