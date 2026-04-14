@@ -4,11 +4,15 @@
 
   <url>
     <loc>http://localhost:1313/blue_team/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blue_team/ld-malicious-macro-has-been-executed/</loc>
+    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/blue_team/elk-bumblebee---gold-cabin/</loc>
@@ -44,6 +48,10 @@
   </url>
   <url>
     <loc>http://localhost:1313/blue_team/ld-ls-command-detected-in-requested-url/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</loc>
     <lastmod>2026-04-02T00:00:00+00:00</lastmod>
   </url>
   <url>
