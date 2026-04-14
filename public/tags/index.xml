@@ -7,7 +7,187 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AdFind</title>
+      <link>http://localhost:1313/tags/adfind/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/adfind/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AnyDesk</title>
+      <link>http://localhost:1313/tags/anydesk/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/anydesk/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>BumbleBee</title>
+      <link>http://localhost:1313/tags/bumblebee/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/bumblebee/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Conti</title>
+      <link>http://localhost:1313/tags/conti/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/conti/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Credential Dumping</title>
+      <link>http://localhost:1313/tags/credential-dumping/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/credential-dumping/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ELK</title>
+      <link>http://localhost:1313/tags/elk/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/elk/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GOLD CABIN</title>
+      <link>http://localhost:1313/tags/gold-cabin/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/gold-cabin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ISO</title>
+      <link>http://localhost:1313/tags/iso/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/iso/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LNK</title>
+      <link>http://localhost:1313/tags/lnk/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/lnk/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Log Analysis</title>
+      <link>http://localhost:1313/tags/log-analysis/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/log-analysis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Lsass</title>
+      <link>http://localhost:1313/tags/lsass/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/lsass/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Phishing</title>
+      <link>http://localhost:1313/tags/phishing/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/phishing/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ProcDump</title>
+      <link>http://localhost:1313/tags/procdump/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/procdump/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Process Injection</title>
+      <link>http://localhost:1313/tags/process-injection/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/process-injection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PsExec</title>
+      <link>http://localhost:1313/tags/psexec/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/psexec/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ransomware</title>
+      <link>http://localhost:1313/tags/ransomware/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/ransomware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SIEM</title>
+      <link>http://localhost:1313/tags/siem/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/siem/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SOC</title>
+      <link>http://localhost:1313/tags/soc/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/soc/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Active Directory</title>
@@ -25,36 +205,6 @@
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/bruteforce/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>ELK</title>
-      <link>http://localhost:1313/tags/elk/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/elk/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Log Analysis</title>
-      <link>http://localhost:1313/tags/log-analysis/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/log-analysis/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Lsass</title>
-      <link>http://localhost:1313/tags/lsass/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/lsass/</guid>
       <description></description>
       
     </item>
@@ -90,26 +240,6 @@
     </item>
     
     <item>
-      <title>SIEM</title>
-      <link>http://localhost:1313/tags/siem/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/siem/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>SOC</title>
-      <link>http://localhost:1313/tags/soc/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/soc/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>BlackBasta</title>
       <link>http://localhost:1313/tags/blackbasta/</link>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
@@ -120,11 +250,31 @@
     </item>
     
     <item>
-      <title>Ransomware</title>
-      <link>http://localhost:1313/tags/ransomware/</link>
+      <title>LOLbins</title>
+      <link>http://localhost:1313/tags/lolbins/</link>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ransomware/</guid>
+      <guid>http://localhost:1313/tags/lolbins/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MEGA</title>
+      <link>http://localhost:1313/tags/mega/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/mega/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>VBA</title>
+      <link>http://localhost:1313/tags/vba/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/vba/</guid>
       <description></description>
       
     </item>
@@ -245,16 +395,6 @@
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/ids/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>LOLbins</title>
-      <link>http://localhost:1313/tags/lolbins/</link>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/lolbins/</guid>
       <description></description>
       
     </item>
@@ -600,16 +740,6 @@
     </item>
     
     <item>
-      <title>LNK</title>
-      <link>http://localhost:1313/tags/lnk/</link>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/lnk/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>MFTExplorer</title>
       <link>http://localhost:1313/tags/mftexplorer/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
@@ -635,16 +765,6 @@
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/pcap/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Phishing</title>
-      <link>http://localhost:1313/tags/phishing/</link>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/phishing/</guid>
       <description></description>
       
     </item>
@@ -725,16 +845,6 @@
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/reverse-engineering/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>VBA</title>
-      <link>http://localhost:1313/tags/vba/</link>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/vba/</guid>
       <description></description>
       
     </item>
@@ -830,7 +940,7 @@
     </item>
     
     <item>
-      <title>Ida</title>
+      <title>IDA</title>
       <link>http://localhost:1313/tags/ida/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
       
@@ -1215,16 +1325,6 @@
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/olevba/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Process Injection</title>
-      <link>http://localhost:1313/tags/process-injection/</link>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/process-injection/</guid>
       <description></description>
       
     </item>

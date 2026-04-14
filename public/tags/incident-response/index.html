@@ -96,8 +96,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.d06df2e245feea7637bdd5686a930feabbf2e5249dd8448f2c72a8bc2a301701f778181c92cf08e97fbc7b2528032a6b55b124d53526a8007fdb6231f93716d6.css"
-    integrity="sha512-0G3y4kX&#43;6nY3vdVoapMP6rvy5SSd2ESPLHKovCowFwH3eBgcks8I6X&#43;8eyUoAyprVbEk1TUmqAB/22Ix&#43;TcW1g==">
+    href="/css/main.bundle.min.8b262900e857162468ff79cfc7b91dec04f6d43db8662d651ee0e073f63e1ad52c434858add76ccfc953efdeea8de584f4a82b7cc2f780bc5d02eb873ac78374.css"
+    integrity="sha512-iyYpAOhXFiRo/3nPx7kd7AT21D24Zi1lHuDgc/Y&#43;GtUsQ0hYrddsz8lT797qjeWE9KgrfML3gLxdAuuHOseDdA==">
 
   
   
@@ -211,10 +211,10 @@
       "name": "Bubka"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-04-07T00:00:00\u002b00:00",
-    "datePublished": "2026-04-07T00:00:00\u002b00:00",
+    "dateCreated": "2026-04-13T00:00:00\u002b00:00",
+    "datePublished": "2026-04-13T00:00:00\u002b00:00",
     
-    "dateModified": "2026-04-07T00:00:00\u002b00:00",
+    "dateModified": "2026-04-13T00:00:00\u002b00:00",
     
     
     
@@ -298,12 +298,12 @@
       href="/investigations/"
       
       class="flex items-center bf-icon-color-hover"
-      aria-label="investigations"
+      aria-label="[investigations]"
       title="">
       
       
         <span class="text-base font-medium break-normal">
-          investigations
+          [investigations]
         </span>
       
     </a>
@@ -316,12 +316,12 @@
       href="/blue_team/"
       
       class="flex items-center bf-icon-color-hover"
-      aria-label="alert analysis"
+      aria-label="[alert analysis]"
       title="">
       
       
         <span class="text-base font-medium break-normal">
-          alert analysis
+          [alert analysis]
         </span>
       
     </a>
@@ -424,12 +424,12 @@
     <div class="px-2">
       <a
         href="/investigations/"
-        aria-label="investigations"
+        aria-label="[investigations]"
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
         <span title="" class="text-2xl font-bold tracking-tight">
-          investigations
+          [investigations]
         </span>
         
       </a>
@@ -441,12 +441,12 @@
     <div class="px-2">
       <a
         href="/blue_team/"
-        aria-label="alert analysis"
+        aria-label="[alert analysis]"
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
         <span title="" class="text-2xl font-bold tracking-tight">
-          alert analysis
+          [alert analysis]
         </span>
         
       </a>
@@ -478,6 +478,23 @@
 
 
 
+
+  <script>
+    (function () {
+      var mainmenu = document.querySelector(".main-menu");
+      if (!mainmenu) return;
+
+      var path = window.location.pathname;
+      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
+
+      links.forEach(function (link) {
+        var targets = link.querySelectorAll("span");
+        targets.forEach(function (el) {
+          el.classList.add("active");
+        });
+      });
+    })();
+  </script>
 
 
   </div>
@@ -602,11 +619,11 @@
     <header class="items-center text-start text-xl font-semibold">
       <a
         
-          href="/blue_team/elk-revil/"
+          href="/blue_team/elk-bumblebee---gold-cabin/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
-          ELK-REvil - GOLD SOUTHFIELD
+          ELK-BumbleBee - GOLD CABIN
           
         </h2>
       </a>
@@ -656,7 +673,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-04-07T00:00:00&#43;00:00">April 7, 2026</time>
+      <time datetime="2026-04-13T00:00:00&#43;00:00">April 13, 2026</time>
     
 
     
@@ -724,6 +741,36 @@
 
               </a>
             
+              <a class="relative mt-[0.5rem] me-2" href="/tags/bumblebee/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    BumbleBee
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/gold-cabin/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    GOLD CABIN
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/conti/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Conti
+  </span>
+</span>
+
+              </a>
+            
               <a class="relative mt-[0.5rem] me-2" href="/tags/ransomware/">
                 <span class="flex cursor-pointer">
   <span
@@ -734,71 +781,121 @@
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/revil/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/phishing/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    REvil
+    Phishing
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/sodinokibi/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/iso/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Sodinokibi
+    ISO
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/gold-southfield/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/lnk/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    GOLD SOUTHFIELD
+    LNK
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/sysmon/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/process-injection/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Sysmon
+    Process Injection
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/shadow-copy-deletion/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/credential-dumping/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Shadow Copy Deletion
+    Credential Dumping
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/lolbins/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/lsass/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    LOLBins
+    Lsass
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/wmi/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/procdump/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    WMI
+    ProcDump
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/lateral-movement/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Lateral Movement
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/psexec/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    PsExec
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/adfind/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    AdFind
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/anydesk/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    AnyDesk
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/data-exfiltration/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Data Exfiltration
   </span>
 </span>
 
@@ -814,31 +911,21 @@
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/virustotal/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/dfir/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VirusTotal
+    DFIR
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/any.run/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/sysmon/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ANY.RUN
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/tor/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Tor
+    Sysmon
   </span>
 </span>
 
@@ -858,7 +945,7 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        An administrator executed facebook assistant.exe on a Windows Server 2019 host, which dropped REvil ransomware (Sodinokibi), spawned a PowerShell process that deleted Volume Shadow Copies, and dropped ransom notes across multiple user profile directories.
+        An employee at CompliantSecure received a phishing email from emkei.cz, downloaded a malicious ISO containing BumbleBee loader 23.dll, which established C2 to 3.68.97.124 and injected into ImagingDevices.exe, dumped LSASS credentials, laterally moved to DC01 via PsExec using markw credentials, staged AdFind and AnyDesk, created sql_admin backdoor account, moved to FileServer01 and Support01, exfiltrated archived share data, and deployed Conti ransomware dropping R3ADM3.txt ransom notes.
       </div>
     
   </div>

@@ -39,8 +39,8 @@ h1 {
 }
 
 .dark {
-  --color-primary-600: 0, 110, 184;
-  --color-primary-400: 31, 158, 234;
+  /* yel: 239, 252, 123; */
+  /* green: 16, 185, 129 */
   --color-secondary-400: 237, 36, 65;
 }
 
