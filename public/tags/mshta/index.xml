@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mshta on bubka hacks stuff</title>
+    <link>http://localhost:1313/tags/mshta/</link>
+    <description>Recent content in Mshta on bubka hacks stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mshta/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LD-Lumma Stealer - DLL Side-Loading via Click Fix Phishing</title>
+      <link>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</guid>
+      <description>A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

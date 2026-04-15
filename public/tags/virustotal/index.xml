@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>LD-Lumma Stealer - DLL Side-Loading via Click Fix Phishing</title>
+      <link>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/ld-lumma-stealer---dll-side-loading-via-click-fix-phishing/</guid>
+      <description>A Click Fix phishing email impersonating Microsoft lured Dylan into visiting a malicious site, which executed a disguised PowerShell command launching mshta.exe to download Lumma Stealer payload from overcoatpassably.shop. The host was contained before confirmed data exfiltration.</description>
+      
+    </item>
+    
+    <item>
       <title>ELK-REvil - GOLD SOUTHFIELD</title>
       <link>http://localhost:1313/blue_team/elk-revil/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>

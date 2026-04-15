@@ -21,7 +21,7 @@
 
   
   
-    <meta name="description" content="Writeups on malware analysis, reverse engineering and DFIR.">
+    <meta name="description" content=" ">
   
   
   
@@ -42,14 +42,14 @@
   <meta property="og:url" content="http://localhost:1313/tags/exfiltration/">
   <meta property="og:site_name" content="bubka hacks stuff">
   <meta property="og:title" content="Exfiltration">
-  <meta property="og:description" content="Writeups on malware analysis, reverse engineering and DFIR.">
+  <meta property="og:description" content="">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Exfiltration">
-  <meta name="twitter:description" content="Writeups on malware analysis, reverse engineering and DFIR.">
+  <meta name="twitter:description" content="">
 
   
   
@@ -96,8 +96,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.a43bd96402d64f3ae581b62e60d008ff4e811a8cc306f092cefcfb417f14379577a43c78af32df9377887787cdc15c45543b465ba537c4f4e428f6ba33e0e8ea.css"
-    integrity="sha512-pDvZZALWTzrlgbYuYNAI/06BGozDBvCSzvz7QX8UN5V3pDx4rzLfk3eId4fNwVxFVDtGW6U3xPTkKPa6M&#43;Do6g==">
+    href="/css/main.bundle.min.8b262900e857162468ff79cfc7b91dec04f6d43db8662d651ee0e073f63e1ad52c434858add76ccfc953efdeea8de584f4a82b7cc2f780bc5d02eb873ac78374.css"
+    integrity="sha512-iyYpAOhXFiRo/3nPx7kd7AT21D24Zi1lHuDgc/Y&#43;GtUsQ0hYrddsz8lT797qjeWE9KgrfML3gLxdAuuHOseDdA==">
 
   
   
@@ -211,10 +211,10 @@
       "name": "Bubka"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-04-01T00:00:00\u002b00:00",
-    "datePublished": "2026-04-01T00:00:00\u002b00:00",
+    "dateCreated": "2026-04-14T00:00:00\u002b00:00",
+    "datePublished": "2026-04-14T00:00:00\u002b00:00",
     
-    "dateModified": "2026-04-01T00:00:00\u002b00:00",
+    "dateModified": "2026-04-14T00:00:00\u002b00:00",
     
     
     
@@ -298,12 +298,12 @@
       href="/investigations/"
       
       class="flex items-center bf-icon-color-hover"
-      aria-label="investigations"
+      aria-label="[investigations]"
       title="">
       
       
         <span class="text-base font-medium break-normal">
-          investigations
+          [investigations]
         </span>
       
     </a>
@@ -316,12 +316,12 @@
       href="/blue_team/"
       
       class="flex items-center bf-icon-color-hover"
-      aria-label="blue team"
+      aria-label="[alert analysis]"
       title="">
       
       
         <span class="text-base font-medium break-normal">
-          blue team
+          [alert analysis]
         </span>
       
     </a>
@@ -424,12 +424,12 @@
     <div class="px-2">
       <a
         href="/investigations/"
-        aria-label="investigations"
+        aria-label="[investigations]"
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
         <span title="" class="text-2xl font-bold tracking-tight">
-          investigations
+          [investigations]
         </span>
         
       </a>
@@ -441,12 +441,12 @@
     <div class="px-2">
       <a
         href="/blue_team/"
-        aria-label="blue team"
+        aria-label="[alert analysis]"
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
         <span title="" class="text-2xl font-bold tracking-tight">
-          blue team
+          [alert analysis]
         </span>
         
       </a>
@@ -478,6 +478,23 @@
 
 
 
+
+  <script>
+    (function () {
+      var mainmenu = document.querySelector(".main-menu");
+      if (!mainmenu) return;
+
+      var path = window.location.pathname;
+      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
+
+      links.forEach(function (link) {
+        var targets = link.querySelectorAll("span");
+        targets.forEach(function (el) {
+          el.classList.add("active");
+        });
+      });
+    })();
+  </script>
 
 
   </div>
@@ -602,11 +619,11 @@
     <header class="items-center text-start text-xl font-semibold">
       <a
         
-          href="/blue_team/cdef-qradar101/"
+          href="/blue_team/sentinel-s3credentialshunt/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
-          CDEF-Qradar101
+          Splunk-AWSRaid
           
         </h2>
       </a>
@@ -656,7 +673,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-04-01T00:00:00&#43;00:00">April 1, 2026</time>
+      <time datetime="2026-04-14T00:00:00&#43;00:00">April 14, 2026</time>
     
 
     
@@ -684,81 +701,41 @@
         
           
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/splunk/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SOC
+    Splunk
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/siem/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/aws/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SIEM
+    AWS
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/qradar/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/cloudtrail/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Qradar
+    CloudTrail
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/web-attack/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/brute-force/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Web Attack
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/active-directory/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Active Directory
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/metaspoit/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Metaspoit
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/process-injection/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Process Injection
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/lateral-movement/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Lateral Movement
+    Brute Force
   </span>
 </span>
 
@@ -769,6 +746,36 @@
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     Exfiltration
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/persistence/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Persistence
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/privilege-escalation/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Privilege Escalation
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/s3/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    S3
   </span>
 </span>
 
@@ -788,7 +795,7 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        A user opened a malicious Word document that dropped FSETPBEUsIek.exe, which spawned a VBS script, injected into notepad.exe, established persistence via registry Run key, exfiltrated sami.xlsx to an attacker-controlled server, and triggered a Metasploit reverse shell detected by Suricata.
+        An attacker conducted a brute-force attack to compromise the helpdesk.luke account, performed reconnaissance from various VPN IPs, exfiltrated sensitive data including customer backups and secrets, modified bucket permissions, and established persistence by creating an admin backdoor account.
       </div>
     
   </div>
