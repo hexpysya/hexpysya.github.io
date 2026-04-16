@@ -18,8 +18,7 @@ theme = "blowfish"
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
-    noClasses = true
-    style = 'monokai'
+    noClasses = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
