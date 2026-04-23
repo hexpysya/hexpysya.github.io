@@ -6,3 +6,4 @@
     max-width: none !important;
   }
 </style>
+{{< all_tags >}}

@@ -302,3 +302,93 @@ article.flex.flex-col:hover h2 {
   border-bottom: 2px solid; 
   padding-bottom: 0.5px; 
 }
+
+
+
+
+
+
+
+
+
+
+
+#tags-wrapper {
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/* СКРИТО */
+.tags-collapsed {
+  max-height: 140px; /* 🔥 вище ніж було (було 180) */
+
+  /* плавне зникання */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 65%,
+    rgba(0,0,0,0.6) 80%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 65%,
+    rgba(0,0,0,0.6) 80%,
+    transparent 100%
+  );
+}
+
+/* ВІДКРИТО */
+.tags-expanded {
+  max-height: 1200px;
+
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* прибираємо старий overlay */
+.tags-collapsed::after {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tags-toggle-btn {
+  font-family: 'MyMonoFont', monospace;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* псевдо-лінія */
+.tags-toggle-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #10b981;
+  transition: width 0.25s ease;
+}
+
+.tags-toggle-btn:hover {
+  color: #10b981;
+}
+
+.tags-toggle-btn:hover::after {
+  width: 100%;
+}

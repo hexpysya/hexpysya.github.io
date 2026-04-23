@@ -1,10 +1,17 @@
-{{ $featured := slice "Malware Analysis" "SOC" "Reverse Engineering" "SIEM" }}
-
 <div class="my-6 w-full">
+
+  <div class="mb-3 flex justify-start">
+    <button id="toggle-tags"
+      class="tags-toggle-btn text-sm opacity-70 hover:opacity-100 flex items-center gap-1">
+      ↓ Show more
+    </button>
+  </div>
+
+  <!-- FEATURED -->
   <div class="flex flex-wrap gap-2 mb-4 w-full">
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    {{ range $name, $taxonomy := site.Taxonomies.tags }}
       {{ with site.GetPage (printf "/tags/%s" $name) }}
-        {{ if in $featured .Title }}
+        {{ if or (eq .Title "Malware Analysis") (eq .Title "SOC") (eq .Title "Reverse Engineering") (eq .Title "SIEM") }}
           <a href="{{ .RelPermalink }}"
              class="featured-tag rounded-md border px-3 py-1 text-sm font-semibold">
             {{ .Title }}
@@ -15,18 +22,43 @@
     {{ end }}
   </div>
 
-  <div class="flex flex-wrap gap-2 w-full">
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      {{ with site.GetPage (printf "/tags/%s" $name) }}
-        {{ if not (in $featured .Title) }}
-          <a href="{{ .RelPermalink }}"
-             class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm
-                    text-neutral-700 dark:text-neutral-300">
-            {{ .Title }}
-            <span class="opacity-50 text-xs ml-1">({{ len $taxonomy }})</span>
-          </a>
+
+  <!-- TAGS -->
+  <div id="tags-wrapper" class="tags-collapsed">
+    <div class="flex flex-wrap gap-2 w-full">
+      {{ range $name, $taxonomy := site.Taxonomies.tags }}
+        {{ with site.GetPage (printf "/tags/%s" $name) }}
+          {{ if not (or (eq .Title "Malware Analysis") (eq .Title "SOC") (eq .Title "Reverse Engineering") (eq .Title "SIEM")) }}
+            <a href="{{ .RelPermalink }}"
+               class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
+              {{ .Title }}
+              <span class="opacity-50 text-xs ml-1">({{ len $taxonomy }})</span>
+            </a>
+          {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
+    </div>
   </div>
+
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("toggle-tags");
+  const wrapper = document.getElementById("tags-wrapper");
+
+  if (!btn || !wrapper) return;
+
+  btn.addEventListener("click", function () {
+    if (wrapper.classList.contains("tags-collapsed")) {
+      wrapper.classList.remove("tags-collapsed");
+      wrapper.classList.add("tags-expanded");
+      btn.textContent = "↑ Show less";
+    } else {
+      wrapper.classList.remove("tags-expanded");
+      wrapper.classList.add("tags-collapsed");
+      btn.textContent = "↓ Show more";
+    }
+  });
+});
+</script>
