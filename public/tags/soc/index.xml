@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/soc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/soc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LD-Malicious File Download Attempt</title>
+      <link>http://localhost:1313/blue_team/ld-malicious-file-download-attempt/</link>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/ld-malicious-file-download-attempt/</guid>
+      <description>A malicious DOCM file was blocked on download at NicolasPRD. VirusTotal confirmed 38/65 detections with an AutoOpen macro that downloads and executes a PowerShell payload. No C2 contact was made.</description>
+      
+    </item>
+    
+    <item>
+      <title>Splunk-Poisoned PyTorch</title>
+      <link>http://localhost:1313/blue_team/splunk-poisoned-pytorch/</link>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/splunk-poisoned-pytorch/</guid>
+      <description>A tampered python dependency executed a powershell stager on developer michelvic&amp;rsquo;s workstation, dropped a C2 DLL with Run key persistence, extracted domain.admin credentials from sysprep files, laterally moved to DC01, BACKUP-SERVER-0, and FILE-SERVER-01 via RDP, deleted shadow copies, and deployed Lynx ransomware across all three hosts.</description>
+      
+    </item>
     
     <item>
       <title>ELK-RansomHub</title>
@@ -15,7 +35,17 @@
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/blue_team/elk-ransomhub/</guid>
-      <description>An attacker breached Maromalix Corporation&amp;rsquo;s network by placing a fake browser error message on their public website, tricking a user into executing a fileless Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data.</description>
+      <description>An attacker breached Maromalix Corporation&amp;rsquo;s network by placing a fake browser error message on their public website, tricking a user into executing a Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data.</description>
+      
+    </item>
+    
+    <item>
+      <title>LD-Detected Suspicious Xls File</title>
+      <link>http://localhost:1313/blue_team/ld-detected-suspicious-xls-file/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/ld-detected-suspicious-xls-file/</guid>
+      <description>A user executed a malicious XLSM file that exploited CVE-2017-11882 via the Equation Editor, dropped and ran an obfuscated VBS payload hidden in an NTFS alternate data stream, and connected to a Brazilian C2 domain flagged by 8/91 VirusTotal vendors.</description>
       
     </item>
     

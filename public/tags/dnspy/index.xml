@@ -15,7 +15,7 @@
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/blue_team/elk-ransomhub/</guid>
-      <description>An attacker breached Maromalix Corporation&amp;rsquo;s network by placing a fake browser error message on their public website, tricking a user into executing a fileless Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data.</description>
+      <description>An attacker breached Maromalix Corporation&amp;rsquo;s network by placing a fake browser error message on their public website, tricking a user into executing a Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data.</description>
       
     </item>
     

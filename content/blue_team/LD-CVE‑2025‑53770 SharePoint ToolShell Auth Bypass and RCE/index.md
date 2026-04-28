@@ -12,7 +12,6 @@ tags:
  - RCE
  - CVE-2025-53770
  - SharePoint
- - Escalation to L2
  - True Positive
  - AbuseIPDB
  - VirusTotal

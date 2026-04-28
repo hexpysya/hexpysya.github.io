@@ -11,7 +11,6 @@ tags:
  - Web Attack
  - XSS
  - Injection
- - No Escalation
  - True Positive
  - AbuseIPDB
  - VirusTotal

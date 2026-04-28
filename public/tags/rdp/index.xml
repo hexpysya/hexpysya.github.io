@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rdp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/rdp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Splunk-Poisoned PyTorch</title>
+      <link>http://localhost:1313/blue_team/splunk-poisoned-pytorch/</link>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blue_team/splunk-poisoned-pytorch/</guid>
+      <description>A tampered python dependency executed a powershell stager on developer michelvic&amp;rsquo;s workstation, dropped a C2 DLL with Run key persistence, extracted domain.admin credentials from sysprep files, laterally moved to DC01, BACKUP-SERVER-0, and FILE-SERVER-01 via RDP, deleted shadow copies, and deployed Lynx ransomware across all three hosts.</description>
+      
+    </item>
     
     <item>
       <title>Splunk-ShadowRoast</title>

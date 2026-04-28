@@ -10,7 +10,6 @@ tags:
   - Log Analysis
   - Phishing
   - VBA
-  - Escalation to L2
   - True Positive
 platform: LetsDefend
 ---

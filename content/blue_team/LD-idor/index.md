@@ -12,7 +12,6 @@ tags:
  - IDOR
  - Broken Access Control
  - DigitalOcean
- - Escalation to L2
  - True Positive
 ---
 

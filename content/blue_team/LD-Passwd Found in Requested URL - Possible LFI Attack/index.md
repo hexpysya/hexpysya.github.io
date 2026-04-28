@@ -11,7 +11,6 @@ tags:
  - Web Attack
  - LFI
  - Path Traversal
- - No Escalation
  - True Positive
  - AbuseIPDB
  - VirusTotal

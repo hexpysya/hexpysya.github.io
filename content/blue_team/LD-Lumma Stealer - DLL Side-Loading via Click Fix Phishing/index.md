@@ -18,7 +18,6 @@ tags:
   - VirusTotal
   - AbuseIPDB
   - True Positive
-  - Escalation to L2
 platform: LetsDefend
 ---
 

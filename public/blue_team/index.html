@@ -42,14 +42,14 @@
   <meta property="og:url" content="http://localhost:1313/blue_team/">
   <meta property="og:site_name" content="bubka hacks stuff">
   <meta property="og:title" content="bubka hacks stuff">
-  <meta property="og:description" content="↓ Show moreMalware Analysis(23)Reverse Engineering(14)SIEM(28)SOC(32).NET(5)AbuseIPDB(9)Active Directory(6)AD CS(2)AdFind(1)AES(4)AgentTesla(1)Anti-Debugging(1)Anti-VM(2)ANY.RUN(1)AnyDesk(1)AS-REP Roasting(1)AsyncRAT(1)Avr(1)AWS(1)BlackBasta(1)Blockchain(1)Broken Access Control(1)BruteForce(4)BumbleBee(1)CamaleonCMS(1)Capa(1)CAPEv2(1)ChaCha20(1)ChromeHistoryView(1)Click Fix(1)Clipboard Hijacking(2)CloudTrail(1)Cobalt(1)Cobalt Strike(1)Command Injection(1)Conti(1)CRC32(1)Credential Dumping(2)CryptnetUrlCache(1)Cryptocurrency Stealer(2)CVE(1)CVE-2017-0199(1)CVE-2017-11882(1)CVE-2021-24762(1)CVE-2024-14847(1)CVE-2024-24919(1)CVE-2024-4577(1)CVE-2024-46987(1)CVE-2024-48990(1)CVE-2024-6473(1)CVE-2025-2304(1)CVE-2025-24071(1)CVE-2025-53770(1)CVE-2025-55182(1)CVE-2026-24061(1)Debug(1)DFIR(9)DigitalOcean(1)DLL(2)DLL Hijacking(2)DNS Tunneling(1)Dnspy(5)Doc(1)Dridex(1)Dynamic API Resolution(1)EDR(16)ELF(4)ELF64(1)ELK(6)Emotet(1)Endpoint Forensic(1)ESC1(1)Escalation to L2(7)Ethereum(1)EtherRAT(1)Event Viewer(4)Excel(1)Extension(1)Facter(1)False Positive(1)File-Upload(1)Fileless Malware(3)Ghidra(1)Gobuster(1)Golang(1)GOLD CABIN(1)HashDB(1)Heaven&#39;s Gate(1)HTA(2)IAM(1)IDA(9)IDOR(1)IDS(2)IIS(1)Indirect Calls(1)Infostealer(3)Injection(1)Installer(1)ISO(1)JavaScript(5)JuicyPotato(1)Kerberoasting(1)Keylogger(2)LFI(2)Linux(11)LKM(1)LNK(4)Loader(1)Log Analysis(27)LOLBins(4)Lsass(2)Lumma Stealer(1)MEGA(1)Memory Analysis(2)MFTExplorer(3)Mimikatz(3)Mini Dump(1)Mongodb(1)MotW Bypass(1)Mshta(1)MSSQL(1)NAT Traversal(1)Needrestart(1)Network Analysis(9)Nmap(4)No Escalation(4)NSIS(1)Oleid(1)Olevba(2)Packer(1)Password Spraying(1)Path-Traversal(3)PCAP(3)PDF(3)Pdf-Parser(2)Pdfid(2)PE(12)PECmd(2)Phishing(11)PHORPIEX(1)PoshC2(1)Powercat(1)PowerShell(9)PowerView(2)Privilege Escalation(1)ProcDump(1)Process Injection(4)PsExec(3)Qradar(1)RansomHub(1)Ransomware(7)RAT(2)RBCD(1)RC4(1)RCE(3)RDP(3)RegistryExplorer(2)REvil(1)Rootkit(1)RTF(1)Rtfobj(1)Rubeus(1)Rust(1)Rust-Gdb(1)S3(2)Salsa20(1)Sandbox(5)Sandbox Evasion(1)Scdbg(1)Self-Extracting Archive(1)SharePoint(1)Shellcode Analysis(2)Smart Contract(1)SMB(1)SMTP(1)Splunk(6)SQL Injection(3)Sqlite(1)Sqlmap(1)Srand(1)Suricata(2)Sysmon(2)T1053.003(1)T1098.004(1)T1110(1)T1136.001(1)T1190(1)T1543.002(1)Telnet(1)TLS Sniffer(1)Tor(1)True Positive(13)UPnP Exploitation(1)UPX(1)USB Spreading(1)VBA(4)VBScript(1)Vectored Exception Handling(1)VirusTotal(13)Vmonkey(1)Volatility3(3)Wazuh(3)Web(3)Web Attack(8)WinDBG(1)Windows(24)Wireshark(6)WMI(1)WordPress(1)WPScan(1)X64dbg(1)Xlm-Macros(1)Xlmdeobfuscator(1)Xlsx(1)XSS(1)XWorm(1)Zeek(1)">
+  <meta property="og:description" content="This section contains incident reports built around SIEM work - ELK, Splunk, and Wazuh. Each report covers a specific incident: from the triggering alert through reconstructing the full attack chain. Cases include ransomware campaigns (RansomHub, Black Basta, Conti, Lynx), Active Directory attacks (AS-REP Roasting, AD CS ESC, RBCD), AWS cloud infrastructure compromises, web attacks, and phishing delivering infostealers.↓ Show moreMalware Analysis(24)Reverse Engineering(14)SIEM(30)SOC(35).NET(5)AbuseIPDB(10)Active Directory(7)AD CS(2)AdFind(1)AES(4)AgentTesla(1)Anti-Debugging(1)Anti-VM(2)ANY.RUN(1)AnyDesk(1)AS-REP Roasting(1)AsyncRAT(1)Avr(1)AWS(1)BlackBasta(1)Blockchain(1)Broken Access Control(1)BruteForce(4)BumbleBee(1)CamaleonCMS(1)Capa(1)CAPEv2(1)ChaCha20(1)ChromeHistoryView(1)Click Fix(1)Clipboard Hijacking(2)CloudTrail(1)Cobalt(1)Cobalt Strike(2)Command Injection(1)Conti(1)CRC32(1)Credential Dumping(2)CryptnetUrlCache(1)Cryptocurrency Stealer(2)CVE(1)CVE-2017-0199(1)CVE-2017-11882(2)CVE-2021-24762(1)CVE-2024-14847(1)CVE-2024-24919(1)CVE-2024-4577(1)CVE-2024-46987(1)CVE-2024-48990(1)CVE-2024-6473(1)CVE-2025-2304(1)CVE-2025-24071(1)CVE-2025-53770(1)CVE-2025-55182(1)CVE-2026-24061(1)Debug(1)DFIR(10)DigitalOcean(1)DLL(2)DLL Hijacking(2)DNS Tunneling(1)Dnspy(5)Doc(1)Dridex(1)Dynamic API Resolution(1)EDR(17)ELF(4)ELF64(1)ELK(6)Emotet(1)Endpoint Forensic(1)ESC1(1)Ethereum(1)EtherRAT(1)Event Viewer(4)Excel(1)Extension(1)Facter(1)False Positive(1)File-Upload(1)Fileless Malware(2)Ghidra(1)Gobuster(1)Golang(1)GOLD CABIN(1)HashDB(1)Heaven&#39;s Gate(1)HTA(2)IAM(1)IDA(9)IDOR(1)IDS(2)IIS(1)Indirect Calls(1)Infostealer(3)Injection(1)Installer(1)ISO(1)JavaScript(5)JuicyPotato(1)Kerberoasting(1)Keylogger(2)LFI(2)Linux(11)LKM(1)LNK(4)Loader(1)Log Analysis(30)LOLbins(4)Lsass(2)Lumma Stealer(1)Lynx(1)MEGA(1)Memory Analysis(2)MFTExplorer(3)Mimikatz(3)Mini Dump(1)Mongodb(1)MotW Bypass(1)Mshta(1)MSSQL(1)NAT Traversal(1)Needrestart(1)Network Analysis(9)Nmap(4)NSIS(1)Oleid(1)Olevba(2)Packer(1)Password Spraying(1)Path Traversal(3)PCAP(3)PDF(3)Pdf-Parser(2)Pdfid(2)PE(12)PECmd(2)Phishing(13)PHORPIEX(1)PoshC2(1)Powercat(1)Powershell(10)PowerView(2)Privilege Escalation(1)ProcDump(1)Process Injection(4)PsExec(3)Python(1)Qradar(1)RansomHub(1)Ransomware(8)RAT(2)RBCD(1)RC4(1)RCE(3)RDP(4)RegistryExplorer(2)REvil(1)Rootkit(1)RTF(1)Rtfobj(1)Rubeus(1)Rust(1)Rust-Gdb(1)S3(2)Salsa20(1)Sandbox(5)Sandbox Evasion(1)Scdbg(1)Self-Extracting Archive(1)SharePoint(1)Shellcode Analysis(2)Smart Contract(1)SMB(1)SMTP(1)Splunk(7)SQL Injection(3)Sqlite(1)Sqlmap(1)Srand(1)Suricata(2)Sysmon(2)T1053.003(1)T1098.004(1)T1110(1)T1136.001(1)T1190(1)T1543.002(1)Telnet(1)TLS Sniffer(1)Tor(1)True Positive(14)UPnP Exploitation(1)UPX(1)USB Spreading(1)VBA(6)VBScript(1)Vectored Exception Handling(1)VirusTotal(14)Vmonkey(1)Volatility3(3)Wazuh(3)Web(3)Web Attack(8)WinDBG(1)Windows(25)Wireshark(6)WMI(1)WordPress(1)WPScan(1)WSL(1)X64dbg(1)Xlm-Macros(1)Xlmdeobfuscator(1)Xlsx(1)XSS(1)XWorm(1)Zeek(1)">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="bubka hacks stuff">
-  <meta name="twitter:description" content="↓ Show moreMalware Analysis(23)Reverse Engineering(14)SIEM(28)SOC(32).NET(5)AbuseIPDB(9)Active Directory(6)AD CS(2)AdFind(1)AES(4)AgentTesla(1)Anti-Debugging(1)Anti-VM(2)ANY.RUN(1)AnyDesk(1)AS-REP Roasting(1)AsyncRAT(1)Avr(1)AWS(1)BlackBasta(1)Blockchain(1)Broken Access Control(1)BruteForce(4)BumbleBee(1)CamaleonCMS(1)Capa(1)CAPEv2(1)ChaCha20(1)ChromeHistoryView(1)Click Fix(1)Clipboard Hijacking(2)CloudTrail(1)Cobalt(1)Cobalt Strike(1)Command Injection(1)Conti(1)CRC32(1)Credential Dumping(2)CryptnetUrlCache(1)Cryptocurrency Stealer(2)CVE(1)CVE-2017-0199(1)CVE-2017-11882(1)CVE-2021-24762(1)CVE-2024-14847(1)CVE-2024-24919(1)CVE-2024-4577(1)CVE-2024-46987(1)CVE-2024-48990(1)CVE-2024-6473(1)CVE-2025-2304(1)CVE-2025-24071(1)CVE-2025-53770(1)CVE-2025-55182(1)CVE-2026-24061(1)Debug(1)DFIR(9)DigitalOcean(1)DLL(2)DLL Hijacking(2)DNS Tunneling(1)Dnspy(5)Doc(1)Dridex(1)Dynamic API Resolution(1)EDR(16)ELF(4)ELF64(1)ELK(6)Emotet(1)Endpoint Forensic(1)ESC1(1)Escalation to L2(7)Ethereum(1)EtherRAT(1)Event Viewer(4)Excel(1)Extension(1)Facter(1)False Positive(1)File-Upload(1)Fileless Malware(3)Ghidra(1)Gobuster(1)Golang(1)GOLD CABIN(1)HashDB(1)Heaven&#39;s Gate(1)HTA(2)IAM(1)IDA(9)IDOR(1)IDS(2)IIS(1)Indirect Calls(1)Infostealer(3)Injection(1)Installer(1)ISO(1)JavaScript(5)JuicyPotato(1)Kerberoasting(1)Keylogger(2)LFI(2)Linux(11)LKM(1)LNK(4)Loader(1)Log Analysis(27)LOLBins(4)Lsass(2)Lumma Stealer(1)MEGA(1)Memory Analysis(2)MFTExplorer(3)Mimikatz(3)Mini Dump(1)Mongodb(1)MotW Bypass(1)Mshta(1)MSSQL(1)NAT Traversal(1)Needrestart(1)Network Analysis(9)Nmap(4)No Escalation(4)NSIS(1)Oleid(1)Olevba(2)Packer(1)Password Spraying(1)Path-Traversal(3)PCAP(3)PDF(3)Pdf-Parser(2)Pdfid(2)PE(12)PECmd(2)Phishing(11)PHORPIEX(1)PoshC2(1)Powercat(1)PowerShell(9)PowerView(2)Privilege Escalation(1)ProcDump(1)Process Injection(4)PsExec(3)Qradar(1)RansomHub(1)Ransomware(7)RAT(2)RBCD(1)RC4(1)RCE(3)RDP(3)RegistryExplorer(2)REvil(1)Rootkit(1)RTF(1)Rtfobj(1)Rubeus(1)Rust(1)Rust-Gdb(1)S3(2)Salsa20(1)Sandbox(5)Sandbox Evasion(1)Scdbg(1)Self-Extracting Archive(1)SharePoint(1)Shellcode Analysis(2)Smart Contract(1)SMB(1)SMTP(1)Splunk(6)SQL Injection(3)Sqlite(1)Sqlmap(1)Srand(1)Suricata(2)Sysmon(2)T1053.003(1)T1098.004(1)T1110(1)T1136.001(1)T1190(1)T1543.002(1)Telnet(1)TLS Sniffer(1)Tor(1)True Positive(13)UPnP Exploitation(1)UPX(1)USB Spreading(1)VBA(4)VBScript(1)Vectored Exception Handling(1)VirusTotal(13)Vmonkey(1)Volatility3(3)Wazuh(3)Web(3)Web Attack(8)WinDBG(1)Windows(24)Wireshark(6)WMI(1)WordPress(1)WPScan(1)X64dbg(1)Xlm-Macros(1)Xlmdeobfuscator(1)Xlsx(1)XSS(1)XWorm(1)Zeek(1)">
+  <meta name="twitter:description" content="This section contains incident reports built around SIEM work - ELK, Splunk, and Wazuh. Each report covers a specific incident: from the triggering alert through reconstructing the full attack chain. Cases include ransomware campaigns (RansomHub, Black Basta, Conti, Lynx), Active Directory attacks (AS-REP Roasting, AD CS ESC, RBCD), AWS cloud infrastructure compromises, web attacks, and phishing delivering infostealers.↓ Show moreMalware Analysis(24)Reverse Engineering(14)SIEM(30)SOC(35).NET(5)AbuseIPDB(10)Active Directory(7)AD CS(2)AdFind(1)AES(4)AgentTesla(1)Anti-Debugging(1)Anti-VM(2)ANY.RUN(1)AnyDesk(1)AS-REP Roasting(1)AsyncRAT(1)Avr(1)AWS(1)BlackBasta(1)Blockchain(1)Broken Access Control(1)BruteForce(4)BumbleBee(1)CamaleonCMS(1)Capa(1)CAPEv2(1)ChaCha20(1)ChromeHistoryView(1)Click Fix(1)Clipboard Hijacking(2)CloudTrail(1)Cobalt(1)Cobalt Strike(2)Command Injection(1)Conti(1)CRC32(1)Credential Dumping(2)CryptnetUrlCache(1)Cryptocurrency Stealer(2)CVE(1)CVE-2017-0199(1)CVE-2017-11882(2)CVE-2021-24762(1)CVE-2024-14847(1)CVE-2024-24919(1)CVE-2024-4577(1)CVE-2024-46987(1)CVE-2024-48990(1)CVE-2024-6473(1)CVE-2025-2304(1)CVE-2025-24071(1)CVE-2025-53770(1)CVE-2025-55182(1)CVE-2026-24061(1)Debug(1)DFIR(10)DigitalOcean(1)DLL(2)DLL Hijacking(2)DNS Tunneling(1)Dnspy(5)Doc(1)Dridex(1)Dynamic API Resolution(1)EDR(17)ELF(4)ELF64(1)ELK(6)Emotet(1)Endpoint Forensic(1)ESC1(1)Ethereum(1)EtherRAT(1)Event Viewer(4)Excel(1)Extension(1)Facter(1)False Positive(1)File-Upload(1)Fileless Malware(2)Ghidra(1)Gobuster(1)Golang(1)GOLD CABIN(1)HashDB(1)Heaven&#39;s Gate(1)HTA(2)IAM(1)IDA(9)IDOR(1)IDS(2)IIS(1)Indirect Calls(1)Infostealer(3)Injection(1)Installer(1)ISO(1)JavaScript(5)JuicyPotato(1)Kerberoasting(1)Keylogger(2)LFI(2)Linux(11)LKM(1)LNK(4)Loader(1)Log Analysis(30)LOLbins(4)Lsass(2)Lumma Stealer(1)Lynx(1)MEGA(1)Memory Analysis(2)MFTExplorer(3)Mimikatz(3)Mini Dump(1)Mongodb(1)MotW Bypass(1)Mshta(1)MSSQL(1)NAT Traversal(1)Needrestart(1)Network Analysis(9)Nmap(4)NSIS(1)Oleid(1)Olevba(2)Packer(1)Password Spraying(1)Path Traversal(3)PCAP(3)PDF(3)Pdf-Parser(2)Pdfid(2)PE(12)PECmd(2)Phishing(13)PHORPIEX(1)PoshC2(1)Powercat(1)Powershell(10)PowerView(2)Privilege Escalation(1)ProcDump(1)Process Injection(4)PsExec(3)Python(1)Qradar(1)RansomHub(1)Ransomware(8)RAT(2)RBCD(1)RC4(1)RCE(3)RDP(4)RegistryExplorer(2)REvil(1)Rootkit(1)RTF(1)Rtfobj(1)Rubeus(1)Rust(1)Rust-Gdb(1)S3(2)Salsa20(1)Sandbox(5)Sandbox Evasion(1)Scdbg(1)Self-Extracting Archive(1)SharePoint(1)Shellcode Analysis(2)Smart Contract(1)SMB(1)SMTP(1)Splunk(7)SQL Injection(3)Sqlite(1)Sqlmap(1)Srand(1)Suricata(2)Sysmon(2)T1053.003(1)T1098.004(1)T1110(1)T1136.001(1)T1190(1)T1543.002(1)Telnet(1)TLS Sniffer(1)Tor(1)True Positive(14)UPnP Exploitation(1)UPX(1)USB Spreading(1)VBA(6)VBScript(1)Vectored Exception Handling(1)VirusTotal(14)Vmonkey(1)Volatility3(3)Wazuh(3)Web(3)Web Attack(8)WinDBG(1)Windows(25)Wireshark(6)WMI(1)WordPress(1)WPScan(1)WSL(1)X64dbg(1)Xlm-Macros(1)Xlmdeobfuscator(1)Xlsx(1)XSS(1)XWorm(1)Zeek(1)">
 
   
   
@@ -211,15 +211,15 @@
       "name": "Bubka"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-04-23T00:00:00\u002b00:00",
-    "datePublished": "2026-04-23T00:00:00\u002b00:00",
+    "dateCreated": "2026-04-27T00:00:00\u002b00:00",
+    "datePublished": "2026-04-27T00:00:00\u002b00:00",
     
-    "dateModified": "2026-04-23T00:00:00\u002b00:00",
+    "dateModified": "2026-04-27T00:00:00\u002b00:00",
     
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "486"
+    "wordCount": "544"
   }]
   </script>
 
@@ -621,6 +621,10 @@
     max-width: none !important;
   }
 </style>
+<div style="text-align: center;">
+This section contains incident reports built around SIEM work - ELK, Splunk, and Wazuh. Each report covers a specific incident: from the triggering alert through reconstructing the full attack chain. Cases include ransomware campaigns (RansomHub, Black Basta, Conti, Lynx), Active Directory attacks (AS-REP Roasting, AD CS ESC, RBCD), AWS cloud infrastructure compromises, web attacks, and phishing delivering infostealers.
+<br></br>
+</div>
 <div class="my-6 w-full">
 
   <div class="mb-3 flex justify-start">
@@ -1070,7 +1074,7 @@
           <a href="/tags/malware-analysis/"
              class="featured-tag rounded-md border px-3 py-1 text-sm font-semibold">
             Malware Analysis
-            <span class="opacity-70 text-xs ml-1">(23)</span>
+            <span class="opacity-70 text-xs ml-1">(24)</span>
           </a>
         
       
@@ -1330,7 +1334,7 @@
           <a href="/tags/siem/"
              class="featured-tag rounded-md border px-3 py-1 text-sm font-semibold">
             SIEM
-            <span class="opacity-70 text-xs ml-1">(28)</span>
+            <span class="opacity-70 text-xs ml-1">(30)</span>
           </a>
         
       
@@ -1352,8 +1356,12 @@
           <a href="/tags/soc/"
              class="featured-tag rounded-md border px-3 py-1 text-sm font-semibold">
             SOC
-            <span class="opacity-70 text-xs ml-1">(32)</span>
+            <span class="opacity-70 text-xs ml-1">(35)</span>
           </a>
+        
+      
+    
+      
         
       
     
@@ -1547,7 +1555,7 @@
             <a href="/tags/abuseipdb/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               AbuseIPDB
-              <span class="opacity-50 text-xs ml-1">(9)</span>
+              <span class="opacity-50 text-xs ml-1">(10)</span>
             </a>
           
         
@@ -1557,7 +1565,7 @@
             <a href="/tags/active-directory/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Active Directory
-              <span class="opacity-50 text-xs ml-1">(6)</span>
+              <span class="opacity-50 text-xs ml-1">(7)</span>
             </a>
           
         
@@ -1827,7 +1835,7 @@
             <a href="/tags/cobalt-strike/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Cobalt Strike
-              <span class="opacity-50 text-xs ml-1">(1)</span>
+              <span class="opacity-50 text-xs ml-1">(2)</span>
             </a>
           
         
@@ -1917,7 +1925,7 @@
             <a href="/tags/cve-2017-11882/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               CVE-2017-11882
-              <span class="opacity-50 text-xs ml-1">(1)</span>
+              <span class="opacity-50 text-xs ml-1">(2)</span>
             </a>
           
         
@@ -2057,7 +2065,7 @@
             <a href="/tags/dfir/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               DFIR
-              <span class="opacity-50 text-xs ml-1">(9)</span>
+              <span class="opacity-50 text-xs ml-1">(10)</span>
             </a>
           
         
@@ -2147,7 +2155,7 @@
             <a href="/tags/edr/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               EDR
-              <span class="opacity-50 text-xs ml-1">(16)</span>
+              <span class="opacity-50 text-xs ml-1">(17)</span>
             </a>
           
         
@@ -2208,16 +2216,6 @@
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               ESC1
               <span class="opacity-50 text-xs ml-1">(1)</span>
-            </a>
-          
-        
-      
-        
-          
-            <a href="/tags/escalation-to-l2/"
-               class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
-              Escalation to L2
-              <span class="opacity-50 text-xs ml-1">(7)</span>
             </a>
           
         
@@ -2307,7 +2305,7 @@
             <a href="/tags/fileless-malware/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Fileless Malware
-              <span class="opacity-50 text-xs ml-1">(3)</span>
+              <span class="opacity-50 text-xs ml-1">(2)</span>
             </a>
           
         
@@ -2577,7 +2575,7 @@
             <a href="/tags/log-analysis/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Log Analysis
-              <span class="opacity-50 text-xs ml-1">(27)</span>
+              <span class="opacity-50 text-xs ml-1">(30)</span>
             </a>
           
         
@@ -2586,7 +2584,7 @@
           
             <a href="/tags/lolbins/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
-              LOLBins
+              LOLbins
               <span class="opacity-50 text-xs ml-1">(4)</span>
             </a>
           
@@ -2607,6 +2605,16 @@
             <a href="/tags/lumma-stealer/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Lumma Stealer
+              <span class="opacity-50 text-xs ml-1">(1)</span>
+            </a>
+          
+        
+      
+        
+          
+            <a href="/tags/lynx/"
+               class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
+              Lynx
               <span class="opacity-50 text-xs ml-1">(1)</span>
             </a>
           
@@ -2748,16 +2756,6 @@
       
         
           
-            <a href="/tags/no-escalation/"
-               class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
-              No Escalation
-              <span class="opacity-50 text-xs ml-1">(4)</span>
-            </a>
-          
-        
-      
-        
-          
             <a href="/tags/nsis/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               NSIS
@@ -2810,7 +2808,7 @@
           
             <a href="/tags/path-traversal/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
-              Path-Traversal
+              Path Traversal
               <span class="opacity-50 text-xs ml-1">(3)</span>
             </a>
           
@@ -2881,7 +2879,7 @@
             <a href="/tags/phishing/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Phishing
-              <span class="opacity-50 text-xs ml-1">(11)</span>
+              <span class="opacity-50 text-xs ml-1">(13)</span>
             </a>
           
         
@@ -2920,8 +2918,8 @@
           
             <a href="/tags/powershell/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
-              PowerShell
-              <span class="opacity-50 text-xs ml-1">(9)</span>
+              Powershell
+              <span class="opacity-50 text-xs ml-1">(10)</span>
             </a>
           
         
@@ -2978,6 +2976,16 @@
       
         
           
+            <a href="/tags/python/"
+               class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
+              Python
+              <span class="opacity-50 text-xs ml-1">(1)</span>
+            </a>
+          
+        
+      
+        
+          
             <a href="/tags/qradar/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Qradar
@@ -3001,7 +3009,7 @@
             <a href="/tags/ransomware/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Ransomware
-              <span class="opacity-50 text-xs ml-1">(7)</span>
+              <span class="opacity-50 text-xs ml-1">(8)</span>
             </a>
           
         
@@ -3051,7 +3059,7 @@
             <a href="/tags/rdp/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               RDP
-              <span class="opacity-50 text-xs ml-1">(3)</span>
+              <span class="opacity-50 text-xs ml-1">(4)</span>
             </a>
           
         
@@ -3263,7 +3271,7 @@
             <a href="/tags/splunk/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Splunk
-              <span class="opacity-50 text-xs ml-1">(6)</span>
+              <span class="opacity-50 text-xs ml-1">(7)</span>
             </a>
           
         
@@ -3423,7 +3431,7 @@
             <a href="/tags/true-positive/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               True Positive
-              <span class="opacity-50 text-xs ml-1">(13)</span>
+              <span class="opacity-50 text-xs ml-1">(14)</span>
             </a>
           
         
@@ -3463,7 +3471,7 @@
             <a href="/tags/vba/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               VBA
-              <span class="opacity-50 text-xs ml-1">(4)</span>
+              <span class="opacity-50 text-xs ml-1">(6)</span>
             </a>
           
         
@@ -3493,7 +3501,7 @@
             <a href="/tags/virustotal/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               VirusTotal
-              <span class="opacity-50 text-xs ml-1">(13)</span>
+              <span class="opacity-50 text-xs ml-1">(14)</span>
             </a>
           
         
@@ -3563,7 +3571,7 @@
             <a href="/tags/windows/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               Windows
-              <span class="opacity-50 text-xs ml-1">(24)</span>
+              <span class="opacity-50 text-xs ml-1">(25)</span>
             </a>
           
         
@@ -3603,6 +3611,16 @@
             <a href="/tags/wpscan/"
                class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
               WPScan
+              <span class="opacity-50 text-xs ml-1">(1)</span>
+            </a>
+          
+        
+      
+        
+          
+            <a href="/tags/wsl/"
+               class="tag-item rounded-md border border-primary-600 px-3 py-1 text-sm text-neutral-700 dark:text-neutral-300">
+              WSL
               <span class="opacity-50 text-xs ml-1">(1)</span>
             </a>
           
@@ -3781,6 +3799,316 @@ document.addEventListener("DOMContentLoaded", function () {
     <header class="items-center text-start text-xl font-semibold">
       <a
         
+          href="/blue_team/splunk-poisoned-pytorch/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          Splunk-Poisoned PyTorch
+          
+        </h2>
+      </a>
+      
+      
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-04-27T00:00:00&#43;00:00">April 27, 2026</time>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+          
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/splunk/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Splunk
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SOC
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/siem/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SIEM
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/log-analysis/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Log Analysis
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/dfir/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    DFIR
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/malware-analysis/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Malware Analysis
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/windows/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Windows
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/python/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Python
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/cobalt-strike/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Cobalt Strike
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/active-directory/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Active Directory
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/powershell/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Powershell
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/rdp/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    RDP
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/wsl/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    WSL
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/ransomware/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Ransomware
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/lynx/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Lynx
+  </span>
+</span>
+
+              </a>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+    </div>
+    
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A tampered python dependency executed a powershell stager on developer michelvic&rsquo;s workstation, dropped a C2 DLL with Run key persistence, extracted domain.admin credentials from sysprep files, laterally moved to DC01, BACKUP-SERVER-0, and FILE-SERVER-01 via RDP, deleted shadow copies, and deployed Lynx ransomware across all three hosts.
+      </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+            
+              
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+      
+      
+    
+
+    
+    
+      
+    
+  
+
+
+
+<article class="article-link--simple flex flex-col md:flex-row relative">
+  
+  <div class=" mt-3 md:mt-0">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        
           href="/blue_team/elk-ransomhub/"
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
@@ -3863,26 +4191,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
           
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/malware-analysis/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Malware Analysis
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/network-analysis/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Network Analysis
-  </span>
-</span>
-
-              </a>
-            
               <a class="relative mt-[0.5rem] me-2" href="/tags/elk/">
                 <span class="flex cursor-pointer">
   <span
@@ -3923,6 +4231,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
               </a>
             
+              <a class="relative mt-[0.5rem] me-2" href="/tags/malware-analysis/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Malware Analysis
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/network-analysis/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Network Analysis
+  </span>
+</span>
+
+              </a>
+            
               <a class="relative mt-[0.5rem] me-2" href="/tags/ransomware/">
                 <span class="flex cursor-pointer">
   <span
@@ -3953,16 +4281,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/fileless-malware/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Fileless Malware
-  </span>
-</span>
-
-              </a>
-            
               <a class="relative mt-[0.5rem] me-2" href="/tags/process-injection/">
                 <span class="flex cursor-pointer">
   <span
@@ -3977,7 +4295,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PowerShell
+    Powershell
   </span>
 </span>
 
@@ -4067,7 +4385,467 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        An attacker breached Maromalix Corporation&rsquo;s network by placing a fake browser error message on their public website, tricking a user into executing a fileless Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data.
+        An attacker breached Maromalix Corporation&rsquo;s network by placing a fake browser error message on their public website, tricking a user into executing a Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data.
+      </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+            
+              
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+      
+      
+    
+
+    
+    
+      
+    
+  
+
+
+
+<article class="article-link--simple flex flex-col md:flex-row relative">
+  
+  <div class=" mt-3 md:mt-0">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        
+          href="/blue_team/ld-malicious-file-download-attempt/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          LD-Malicious File Download Attempt
+          
+        </h2>
+      </a>
+      
+      
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-04-17T00:00:00&#43;00:00">April 17, 2026</time>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+          
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SOC
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/log-analysis/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Log Analysis
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/phishing/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Phishing
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/vba/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VBA
+  </span>
+</span>
+
+              </a>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+    </div>
+    
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A malicious DOCM file was blocked on download at NicolasPRD. VirusTotal confirmed 38/65 detections with an AutoOpen macro that downloads and executes a PowerShell payload. No C2 contact was made.
+      </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>
+
+            
+              
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+
+    
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+    
+      
+      
+    
+
+    
+    
+      
+    
+  
+
+
+
+<article class="article-link--simple flex flex-col md:flex-row relative">
+  
+  <div class=" mt-3 md:mt-0">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        
+          href="/blue_team/ld-detected-suspicious-xls-file/"
+        
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h2>
+          LD-Detected Suspicious Xls File
+          
+        </h2>
+      </a>
+      
+      
+    </header>
+    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-04-17T00:00:00&#43;00:00">April 17, 2026</time>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+          
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SOC
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/siem/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    SIEM
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/log-analysis/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Log Analysis
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/cve-2017-11882/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CVE-2017-11882
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/phishing/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Phishing
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/true-positive/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    True Positive
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/vba/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VBA
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/virustotal/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    VirusTotal
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/abuseipdb/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    AbuseIPDB
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/edr/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    EDR
+  </span>
+</span>
+
+              </a>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+    </div>
+    
+      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+        A user executed a malicious XLSM file that exploited CVE-2017-11882 via the Equation Editor, dropped and ran an obfuscated VBS payload hidden in an NTFS alternate data stream, and connected to a Brazilian C2 domain flagged by 8/91 VirusTotal vendors.
       </div>
     
   </div>
@@ -4617,7 +5395,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PowerShell
+    Powershell
   </span>
 </span>
 
@@ -4848,16 +5626,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     VBA
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/escalation-to-l2/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Escalation to L2
   </span>
 </span>
 
@@ -5107,7 +5875,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PowerShell
+    Powershell
   </span>
 </span>
 
@@ -5117,7 +5885,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    LOLBins
+    LOLbins
   </span>
 </span>
 
@@ -5168,16 +5936,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     True Positive
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/escalation-to-l2/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Escalation to L2
   </span>
 </span>
 
@@ -5747,7 +6505,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PowerShell
+    Powershell
   </span>
 </span>
 
@@ -5815,806 +6573,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </article>
 
             
-              
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-
-
-  
-  
-    
-
-    
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
-
-    
-    
-      
-      
-    
-
-    
-    
-      
-    
-  
-
-
-
-<article class="article-link--simple flex flex-col md:flex-row relative">
-  
-  <div class=" mt-3 md:mt-0">
-    <header class="items-center text-start text-xl font-semibold">
-      <a
-        
-          href="/blue_team/elk-black-basta/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          ELK-Black Basta
-          
-        </h2>
-      </a>
-      
-      
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2026-04-09T00:00:00&#43;00:00">April 9, 2026</time>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/elk/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ELK
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SOC
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/siem/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SIEM
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/log-analysis/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Log Analysis
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/blackbasta/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    BlackBasta
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/ransomware/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ransomware
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/phishing/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Phishing
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/lolbins/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    LOLBins
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/mega/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    MEGA
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/vba/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    VBA
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/psexec/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PsExec
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        A finance employee opened a malicious Excel macro from a drive-by download, which executed a VBS dropper, loaded WindowsUpdaterFX.dll via regsvr32, established persistence, dropped Pancake.jpg.exe as a C2 backdoor, performed internal reconnaissance, laterally moved to a domain controller via PsExec using compromised credentials, exfiltrated client data to MEGA via rclone, deleted shadow copies, and deployed BlackBasta ransomware.
-      </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-            
-              
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-
-
-  
-  
-    
-
-    
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
-
-    
-    
-      
-      
-    
-
-    
-    
-      
-    
-  
-
-
-
-<article class="article-link--simple flex flex-col md:flex-row relative">
-  
-  <div class=" mt-3 md:mt-0">
-    <header class="items-center text-start text-xl font-semibold">
-      <a
-        
-          href="/blue_team/elk-perfect-survey/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          ELK-Perfect Survey
-          
-        </h2>
-      </a>
-      
-      
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2026-04-08T00:00:00&#43;00:00">April 8, 2026</time>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/elk/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ELK
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SOC
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/siem/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SIEM
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/log-analysis/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Log Analysis
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/active-directory/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Active Directory
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/kerberoasting/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Kerberoasting
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/sql-injection/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SQL Injection
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/cve-2021-24762/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    CVE-2021-24762
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/wordpress/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    WordPress
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/rbcd/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    RBCD
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/ad-cs/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AD CS
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/privilege-escalation/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Privilege Escalation
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/sqlmap/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Sqlmap
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/wpscan/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    WPScan
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        An attacker conducted reconnaissance with Nmap and WPScan against a WordPress site, exploited CVE-2021-24762 in the Perfect Survey plugin via SQLi to extract wp_users password hashes, then pivoted into Active Directory by Kerberoasting alonso.x, creating a rogue computer account, abusing RBCD, and escalating to domain administrator via AD CS certificate abuse.
-      </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-            
-              
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-
-
-  
-  
-    
-
-    
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
-
-    
-    
-      
-      
-    
-
-    
-    
-      
-    
-  
-
-
-
-<article class="article-link--simple flex flex-col md:flex-row relative">
-  
-  <div class=" mt-3 md:mt-0">
-    <header class="items-center text-start text-xl font-semibold">
-      <a
-        
-          href="/blue_team/splunk-t1110-003/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          Splunk-T1110-003
-          
-        </h2>
-      </a>
-      
-      
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2026-04-07T00:00:00&#43;00:00">April 7, 2026</time>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/splunk/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Splunk
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/soc/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SOC
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/siem/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    SIEM
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/log-analysis/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Log Analysis
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/password-spraying/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Password Spraying
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/bruteforce/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    BruteForce
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/rdp/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    RDP
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        An attacker from 192.168.1.60 (Kali) conducted a 5-minute RDP password spraying attack against dev.cyberdefenders.org, generating 4302 failed logon attempts across multiple usernames, and successfully authenticated as administrator and five other accounts via RDP.
-      </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-            
           
         
       </section>
@@ -6641,6 +6599,12 @@ document.addEventListener("DOMContentLoaded", function () {
             href="/blue_team/page/3/"
             class=" mx-1 block min-w-[1.8rem] rounded text-center hover:bg-primary-600 hover:text-neutral"
             >3</a
+          >
+        </li><li>
+          <a
+            href="/blue_team/page/4/"
+            class=" mx-1 block min-w-[1.8rem] rounded text-center hover:bg-primary-600 hover:text-neutral"
+            >4</a
           >
         </li>
       <li>

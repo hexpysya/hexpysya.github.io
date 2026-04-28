@@ -11,7 +11,6 @@ tags:
  - Web Attack
  - Command Injection
  - RCE
- - Escalation to L2
  - True Positive
  - AbuseIPDB
  - VirusTotal

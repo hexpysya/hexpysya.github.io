@@ -9,7 +9,6 @@ tags:
  - EDR
  - Log Analysis
  - False Positive
- - No Escalation
 ---
 
 ### <span class="hl">Alert</span>
