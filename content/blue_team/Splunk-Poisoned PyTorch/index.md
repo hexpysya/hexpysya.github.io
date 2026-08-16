@@ -9,7 +9,6 @@ tags:
   - SIEM
   - Log Analysis
   - DFIR
-  - Malware Analysis
   - Windows
   - Python
   - Cobalt Strike
