@@ -75,7 +75,7 @@ handled by the `main_write` function.
 
 ![alt](main_write.png)
 
-#### <span style="color:red">Keychain store theft</span>
+#### <span style="color:red">Keychain</span>
 
 After obtaining the password, the sample attempts to steal the Keychain.
 Physically it is stored in the file `login.keychain-db` in the user's profile
@@ -102,7 +102,7 @@ security 2>&1 > /dev/null find-generic-password -ga 'Chrome' | awk '{print $2}'
 
 ![alt](chromium_local_state.png)
 
-#### <span style="color:red">Cryptocurrency wallet data theft</span>
+#### <span style="color:red">Cryptocurrency wallets</span>
 
 After the credentials, the sample moves on to collecting cryptocurrency
 wallets. Its targets are Electrum, Coinomi, Exodus, Atomic Wallet and Binance.
@@ -119,7 +119,7 @@ session data and account configuration:
 
 ![alt](binance.png)
 
-#### <span style="color:red">Browser data theft</span>
+#### <span style="color:red">Browser data</span>
 
 The sample steals data from Chrome, Brave, Edge, Vivaldi, Yandex, Opera,
 Opera GX and Firefox.
