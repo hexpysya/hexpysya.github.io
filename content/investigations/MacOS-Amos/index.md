@@ -28,9 +28,9 @@ container, the Chromium password databases, and wallet seed phrases.
 | Property | Value |
 |---|---|
 | File name | 0dbe84f5c41709e83626385867abcd07a736d3191e39a8f9900882f351c275f1 |
-| MD5 | c5367f04e9645033db6cda859c29bee7` |
-| SHA-256 | 0dbe84f5c41709e83626385867abcd07a736d3191e39a8f9900882f351c275f1` |
-| SSDEEP |`98304:jJB2YeVg3JpEkpgy2905PfeYCdgxXFWUw4SjE/j5A1D/3JfYD:1BY6qZ05TGgxMbk1gLc |
+| MD5 | c5367f04e9645033db6cda859c29bee7 |
+| SHA-256 | 0dbe84f5c41709e83626385867abcd07a736d3191e39a8f9900882f351c275f1 |
+| SSDEEP | 98304:jJB2YeVg3JpEkpgy2905PfeYCdgxXFWUw4SjE/j5A1D/3JfYD:1BY6qZ05TGgxMbk1gLc |
 | Size | 9.13 MB (9,576,562 bytes) |
 | Format | Mach-O universal binary (x86_64 + arm64) |
 | Entry point | 0x106afa0 |
